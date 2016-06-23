@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{780EC3C4-7377-46EE-94D2-6C977BF1D969}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Indelek_2015</RootNamespace>
+    <AssemblyName>Indelek_2015</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Indelek_2015.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Indelek_2015.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 10.0\ReportViewer\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="RJS.Web.WebControl.PopCalendar.Net.2008">
+      <HintPath>..\..\..\Referencias_Locales\RJS.Web.WebControl.PopCalendar.Net.2008.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>..\..\..\Referencias_Locales\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Estilos\Body.css" />
+    <Content Include="Estilos\Calendario.css" />
+    <Content Include="Estilos\Footer.css" />
+    <Content Include="Estilos\Header.css" />
+    <Content Include="Estilos\jquery-ui.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Formularios\AgregarArticulo.aspx" />
+    <Content Include="Formularios\Carrito_Compras.aspx" />
+    <Content Include="Formularios\Cerrar_Sesion.aspx" />
+    <Content Include="Formularios\Comentarios.aspx" />
+    <Content Include="Formularios\Consultas_Usuario.aspx" />
+    <Content Include="Formularios\Consulta_Articulos.aspx" />
+    <Content Include="Formularios\Datos_Articulo.aspx" />
+    <Content Include="Formularios\Estado_Cuenta.aspx" />
+    <Content Include="Formularios\Facturacion.aspx" />
+    <Content Include="Formularios\Listas_Precios.aspx" />
+    <Content Include="Formularios\Lista_Archivos.aspx" />
+    <Content Include="Formularios\Login.aspx" />
+    <Content Include="Formularios\Mensajes.aspx" />
+    <Content Include="Formularios\Muestra_Articulo.aspx" />
+    <Content Include="Formularios\Principal.aspx" />
+    <Content Include="Formularios\Prueba.aspx" />
+    <Content Include="Formularios\Recuperar_Contrasena.aspx" />
+    <Content Include="Formularios\Registro.aspx" />
+    <Content Include="Formularios\Ridgid.aspx" />
+    <Content Include="Formularios\Seguimiento_Pedidos.aspx" />
+    <Content Include="Icon.png" />
+    <Content Include="ImagenesUsuario\A1.jpg" />
+    <Content Include="ImagenesUsuario\A2.jpg" />
+    <Content Include="ImagenesUsuario\A3.jpg" />
+    <Content Include="ImagenesUsuario\s3.jpg" />
+    <Content Include="ImagenesUsuario\s1.jpg" />
+    <Content Include="ImagenesUsuario\s2.jpg" />
+    <Content Include="ImagenesRidgid\imagen1.jpg" />
+    <Content Include="ImagenesUsuario\imagen10.jpg" />
+    <Content Include="ImagenesUsuario\imagen11.jpg" />
+    <Content Include="ImagenesUsuario\imagen2.jpg" />
+    <Content Include="ImagenesUsuario\imagen3.jpg" />
+    <Content Include="ImagenesUsuario\imagen6.jpg" />
+    <Content Include="ImagenesUsuario\imagen8.jpg" />
+    <Content Include="ImagenesUsuario\imagen9.jpg" />
+    <Content Include="Imagenes\carrito.png" />
+    <Content Include="Imagenes\fondo_cabecero.jpg" />
+    <Content Include="Imagenes\logotipo.png" />
+    <Content Include="Imagenes\lupa.jpg" />
+    <Content Include="Imagenes\nodisponible.jpg" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Formularios\Pagina_Maestra.Master" />
+    <Content Include="PopCalendar2008\Calendar.gif" />
+    <Content Include="PopCalendar2008\CSS\Classic.css" />
+    <Content Include="PopCalendar2008\CSS\classic_images\baddate.gif" />
+    <Content Include="PopCalendar2008\CSS\classic_images\close.gif" />
+    <Content Include="PopCalendar2008\CSS\classic_images\closedown.gif" />
+    <Content Include="PopCalendar2008\CSS\classic_images\down.gif" />
+    <Content Include="PopCalendar2008\CSS\classic_images\drop1.gif" />
+    <Content Include="PopCalendar2008\CSS\classic_images\drop2.gif" />
+    <Content Include="PopCalendar2008\CSS\classic_images\left1.gif" />
+    <Content Include="PopCalendar2008\CSS\classic_images\left2.gif" />
+    <Content Include="PopCalendar2008\CSS\classic_images\right1.gif" />
+    <Content Include="PopCalendar2008\CSS\classic_images\right2.gif" />
+    <Content Include="PopCalendar2008\CSS\classic_images\special.gif" />
+    <Content Include="PopCalendar2008\CSS\classic_images\up.gif" />
+    <Content Include="PopCalendar2008\CSS\Modern.css" />
+    <Content Include="PopCalendar2008\CSS\modern_images\baddate.gif" />
+    <Content Include="PopCalendar2008\CSS\modern_images\baddatex.gif" />
+    <Content Include="PopCalendar2008\CSS\modern_images\close.gif" />
+    <Content Include="PopCalendar2008\CSS\modern_images\closedown.gif" />
+    <Content Include="PopCalendar2008\CSS\modern_images\down.gif" />
+    <Content Include="PopCalendar2008\CSS\modern_images\drop1.gif" />
+    <Content Include="PopCalendar2008\CSS\modern_images\drop2.gif" />
+    <Content Include="PopCalendar2008\CSS\modern_images\left1.gif" />
+    <Content Include="PopCalendar2008\CSS\modern_images\left2.gif" />
+    <Content Include="PopCalendar2008\CSS\modern_images\right1.gif" />
+    <Content Include="PopCalendar2008\CSS\modern_images\right2.gif" />
+    <Content Include="PopCalendar2008\CSS\modern_images\special.gif" />
+    <Content Include="PopCalendar2008\CSS\modern_images\up.gif" />
+    <Content Include="PopCalendar2008\CSS\Small.css" />
+    <Content Include="PopCalendar2008\CSS\small_images\baddate.gif" />
+    <Content Include="PopCalendar2008\CSS\small_images\close.gif" />
+    <Content Include="PopCalendar2008\CSS\small_images\closedown.gif" />
+    <Content Include="PopCalendar2008\CSS\small_images\down.gif" />
+    <Content Include="PopCalendar2008\CSS\small_images\drop1.gif" />
+    <Content Include="PopCalendar2008\CSS\small_images\drop2.gif" />
+    <Content Include="PopCalendar2008\CSS\small_images\left1.gif" />
+    <Content Include="PopCalendar2008\CSS\small_images\left2.gif" />
+    <Content Include="PopCalendar2008\CSS\small_images\right1.gif" />
+    <Content Include="PopCalendar2008\CSS\small_images\right2.gif" />
+    <Content Include="PopCalendar2008\CSS\small_images\special.gif" />
+    <Content Include="PopCalendar2008\CSS\small_images\up.gif" />
+    <Content Include="PopCalendar2008\DisableCalendar.gif" />
+    <Content Include="PopCalendar2008\PopCalendarAjaxNet.js" />
+    <Content Include="PopCalendar2008\PopCalendarFunctionsAjaxNet.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bxslider\images\bx_loader.gif" />
+    <Content Include="Scripts\bxslider\images\controls.png" />
+    <Content Include="Scripts\bxslider\jquery.bxslider.css" />
+    <Content Include="Scripts\bxslider\jquery.bxslider.min.js" />
+    <Content Include="Scripts\bxslider\plugins\jquery.easing.1.3.js" />
+    <Content Include="Scripts\bxslider\plugins\jquery.fitvids.js" />
+    <Content Include="Scripts\Funciones.js" />
+    <Content Include="Datos\Consulta_Factura.xsc">
+      <DependentUpon>Consulta_Factura.xsd</DependentUpon>
+    </Content>
+    <Content Include="Datos\Consulta_Estado_Cuenta.xsc">
+      <DependentUpon>Consulta_Estado_Cuenta.xsd</DependentUpon>
+    </Content>
+    <None Include="Datos\Consulta_Estado_Cuenta.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Consulta_Estado_Cuenta.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Datos\Consulta_Estado_Cuenta.xss">
+      <DependentUpon>Consulta_Estado_Cuenta.xsd</DependentUpon>
+    </Content>
+    <None Include="Datos\Consulta_Factura.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Consulta_Factura.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Datos\Consulta_Factura.xss">
+      <DependentUpon>Consulta_Factura.xsd</DependentUpon>
+    </Content>
+    <Content Include="Datos\Consulta_Lista_Precios.xsc">
+      <DependentUpon>Consulta_Lista_Precios.xsd</DependentUpon>
+    </Content>
+    <None Include="Datos\Consulta_Lista_Precios.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Consulta_Lista_Precios.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Datos\Consulta_Lista_Precios.xss">
+      <DependentUpon>Consulta_Lista_Precios.xsd</DependentUpon>
+    </Content>
+    <Content Include="Datos\Consulta_Seguimiento_Pedidos.xsc">
+      <DependentUpon>Consulta_Seguimiento_Pedidos.xsd</DependentUpon>
+    </Content>
+    <None Include="Datos\Consulta_Seguimiento_Pedidos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Consulta_Seguimiento_Pedidos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Datos\Consulta_Seguimiento_Pedidos.xss">
+      <DependentUpon>Consulta_Seguimiento_Pedidos.xsd</DependentUpon>
+    </Content>
+    <None Include="My Project\PublishProfiles\Publicación ftp.pubxml" />
+    <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\unslider.min.js" />
+    <None Include="Scripts\jquery-2.0.3.intellisense.js" />
+    <Content Include="Scripts\jquery-2.0.3.js" />
+    <Content Include="Scripts\jquery-2.0.3.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\npm.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datos\Consulta_Estado_Cuenta.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Consulta_Estado_Cuenta.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\Consulta_Factura.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Consulta_Factura.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\Consulta_Lista_Precios.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Consulta_Lista_Precios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\Consulta_Seguimiento_Pedidos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Consulta_Seguimiento_Pedidos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AgregarArticulo.aspx.designer.vb">
+      <DependentUpon>AgregarArticulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AgregarArticulo.aspx.vb">
+      <DependentUpon>AgregarArticulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Carrito_Compras.aspx.designer.vb">
+      <DependentUpon>Carrito_Compras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Carrito_Compras.aspx.vb">
+      <DependentUpon>Carrito_Compras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cerrar_Sesion.aspx.designer.vb">
+      <DependentUpon>Cerrar_Sesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cerrar_Sesion.aspx.vb">
+      <DependentUpon>Cerrar_Sesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Comentarios.aspx.designer.vb">
+      <DependentUpon>Comentarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Comentarios.aspx.vb">
+      <DependentUpon>Comentarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Consultas_Usuario.aspx.designer.vb">
+      <DependentUpon>Consultas_Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Consultas_Usuario.aspx.vb">
+      <DependentUpon>Consultas_Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Consulta_Articulos.aspx.designer.vb">
+      <DependentUpon>Consulta_Articulos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Consulta_Articulos.aspx.vb">
+      <DependentUpon>Consulta_Articulos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Datos_Articulo.aspx.designer.vb">
+      <DependentUpon>Datos_Articulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Datos_Articulo.aspx.vb">
+      <DependentUpon>Datos_Articulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estado_Cuenta.aspx.designer.vb">
+      <DependentUpon>Estado_Cuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estado_Cuenta.aspx.vb">
+      <DependentUpon>Estado_Cuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Facturacion.aspx.designer.vb">
+      <DependentUpon>Facturacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Facturacion.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Facturacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Listas_Precios.aspx.designer.vb">
+      <DependentUpon>Listas_Precios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Listas_Precios.aspx.vb">
+      <DependentUpon>Listas_Precios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Lista_Archivos.aspx.designer.vb">
+      <DependentUpon>Lista_Archivos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Lista_Archivos.aspx.vb">
+      <DependentUpon>Lista_Archivos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mensajes.aspx.designer.vb">
+      <DependentUpon>Mensajes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mensajes.aspx.vb">
+      <DependentUpon>Mensajes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Muestra_Articulo.aspx.designer.vb">
+      <DependentUpon>Muestra_Articulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Muestra_Articulo.aspx.vb">
+      <DependentUpon>Muestra_Articulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Pagina_Maestra.Master.designer.vb">
+      <DependentUpon>Pagina_Maestra.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Pagina_Maestra.Master.vb">
+      <DependentUpon>Pagina_Maestra.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Principal.aspx.designer.vb">
+      <DependentUpon>Principal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Principal.aspx.vb">
+      <DependentUpon>Principal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Prueba.aspx.designer.vb">
+      <DependentUpon>Prueba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Prueba.aspx.vb">
+      <DependentUpon>Prueba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Recuperar_Contrasena.aspx.designer.vb">
+      <DependentUpon>Recuperar_Contrasena.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Recuperar_Contrasena.aspx.vb">
+      <DependentUpon>Recuperar_Contrasena.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Registro.aspx.designer.vb">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Registro.aspx.vb">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ridgid.aspx.designer.vb">
+      <DependentUpon>Ridgid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ridgid.aspx.vb">
+      <DependentUpon>Ridgid.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Seguimiento_Pedidos.aspx.designer.vb">
+      <DependentUpon>Seguimiento_Pedidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Seguimiento_Pedidos.aspx.vb">
+      <DependentUpon>Seguimiento_Pedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Programas\Base_MDS.vb" />
+    <Compile Include="Programas\Carrito.vb" />
+    <Compile Include="Programas\Compara_XML.vb" />
+    <Compile Include="Programas\Envia_Correo.vb" />
+    <Compile Include="Programas\Letras.vb" />
+    <Compile Include="Programas\Servicios.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Rep_Estado_Cuenta.rdlc" />
+    <EmbeddedResource Include="Reportes\Rep_Factura.rdlc" />
+    <EmbeddedResource Include="Reportes\Rep_Lista_Precios.rdlc" />
+    <EmbeddedResource Include="Reportes\Seguimiento_Pedidos.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Scripts\jquery-2.1.4.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63391</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63175/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,37 @@
+﻿#Footer
+{    
+    background-color: #E0DBDB;
+    color: Black;
+    clear: both;    
+    height: 100px;
+    text-align: center;   
+}
+
+.Section_Footer
+{    
+    color: #4E4848;  
+    float: left;
+    text-align: left;
+    width: 250px;      
+}
+
+.Section_Footer ul li
+{
+    list-style: none;
+}
+
+.Section_Footer:first-child
+{
+    margin-left: -40px;    
+}
+
+.Section_Footer ul li a
+{
+    text-decoration: none;
+    color: #2C5330;    
+}
+
+.Section_Footer li a:hover
+{
+    color: DarkBlue;    
+}

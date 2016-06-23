@@ -1,0 +1,208 @@
+﻿.Fondo_Rojo{    background:  transparent url(../Imagenes/Cargando.gif) no-repeat center center;}
+.Fondo_Azul{    background:  transparent url(../Imagenes/Cargando.gif) no-repeat center center;}
+.Fondo_Verde{   background:  transparent url(../Imagenes/Cargando.gif) no-repeat center center;}
+.Fondo_Amarillo{background:  transparent url(../Imagenes/Cargando.gif) no-repeat center center;}
+.Fondo_Gris{    background:  transparent url(../Imagenes/Cargando.gif) no-repeat center center;}
+.Fondo_Morado{  background:  transparent url(../Imagenes/Cargando.gif) no-repeat center center;}
+.Fondo_GRBA{    background:  transparent url(../Imagenes/Cargando.gif) no-repeat center center;}  
+  
+
+#Accesos
+{   
+    float: right;
+    margin-top: 27px;
+    width: 400px;      
+}
+
+#Accesos > li a
+{   
+    color:           RGB( 151, 238, 253);
+    text-decoration: none;    
+}
+
+#Accesos > li a:hover
+{   
+    color:           White;
+    text-decoration: underline;        
+}
+
+#Accesos li
+{    
+    display:        inline ;
+    float:          right;
+    margin-right:   1em;
+}
+
+body{
+	margin:     0;
+	padding:    0 auto 0 auto;
+	color:      rgb(42,31,0);
+	font-family:Tahoma;
+}
+
+#cmdBuscar
+{   
+    background-color:           Yellow;
+    border-top-right-radius:    5px;    
+    border-bottom-right-radius: 5px;
+    margin-left:                -5px;
+    margin-top:                 20px;
+    height:                     35px;
+    vertical-align:             middle;    
+}
+
+.Contenedor_Principal{
+	width:  1007px;
+	margin: 0px auto;		
+}
+
+
+
+.Dynamic_Item_Menu
+{
+    cursor:         pointer;
+    padding-top:    .2em; 
+    padding-bottom: .22em;
+    font-family:    Verdana;
+    text-indent:    1em;
+}
+
+#header{
+	background-image: url("../imagenes/fondo_cabecero.jpg");
+    /*background: RGB( 34, 61, 98);*/
+    height:     162px;    
+    text-align: left;
+}
+
+#Imagen_Carrito
+{    
+    float:                      right;
+    margin-top:                 -50px;
+    margin-right:               6px;
+    border-top-left-radius:     10px;
+    border-top-right-radius:    10px;
+}
+
+#link_Cerrar_Sesion
+{
+    font-weight:bold;
+    color:      Yellow;
+    cursor:     pointer;
+    display:    none;
+}
+
+#Logo
+{        
+    height:         75px;
+    margin-top:     20px;
+    vertical-align: middle;
+    Width:          120px;
+}
+
+#Menu_Dinamico
+{    
+    font-size:      14pt;
+	font-family:    Tahoma;
+    padding:        5px;
+    margin-left:    3px;
+    margin-top:     15px;   
+    text-align:     left;
+    float:          left;
+    position:       relative;
+    z-index:        10;
+    border-style:   none solid solid;
+    border:         1px solid #223B65;        
+    height:         445px; 
+    width:          285px;
+    overflow:       scroll; 
+}
+
+#Menu_Principal
+{        
+    font-size:      1.5em;
+    margin-left:    -36px;
+    margin-top:     0px;
+    overflow:       hidden;
+    width:          104%;
+    height:         60px;
+}
+
+#Menu_Principal > ul > li
+{
+    background-color:   rgb(237, 241, 248);    
+    padding:            8px 10px 8px 10px;
+    display:            inline-block;
+    margin-left:        17px;
+    overflow:           hidden;
+    border-radius:      10px;
+    width: 130px;
+    text-align: center;
+}
+
+#Menu_Principal ul li a
+{
+    text-decoration:    none;
+    color:              #223D62;
+}
+
+#Menu_Principal ul li:hover
+{
+    background-color: #FFF;            
+}
+
+#Navegacion{
+	height:           680px;
+	/*height: 900px;*/
+}
+
+.Static_Item_Menu
+{
+    font-family:    Verdana;
+    height:         1.5em;        
+    cursor:         pointer;
+    font-weight:    bold;
+    padding-top:    .2em; 
+    padding-bottom: .2em;    
+    text-indent:    1em;    
+    text-decoration: none;
+    
+}
+
+.SubMenu_Dinamico
+{
+    border-left:        none;
+	padding:            .5em .5em .5em .5em;
+	background-color:   White;
+}
+
+#Texto_Carrito
+{
+    float:              right;
+    background-color:   yellow;
+    color:              darkblue;
+    cursor:             pointer;
+    border-radius:      15px;
+    width:              1.3em;
+    height:             1.3em;
+    padding:            -5px 2px 2px 2px;
+    margin-top:         -47px;
+    margin-right:       -25px;
+    text-align:         center;
+    z-index:            101;
+}
+
+#txtBuscar
+{    
+    background-color:           RGB(238,238,238);
+    border:                     none;
+    border-top-left-radius:     5px;
+    border-bottom-left-radius:  5px;
+    font-size:                  .9em;
+    color:                      rgba(50, 50, 50, 0.75);
+    height:                     35px;
+    margin-left:                1em;
+    margin-top:                 20px;
+    text-indent:                1em;
+    width:                      350px;
+    vertical-align:             middle;
+}

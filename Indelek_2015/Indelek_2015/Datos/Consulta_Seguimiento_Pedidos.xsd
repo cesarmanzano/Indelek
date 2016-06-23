@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Consulta_Seguimiento_Pedidos" targetNamespace="http://tempuri.org/Consulta_Seguimiento_Pedidos.xsd" xmlns:mstns="http://tempuri.org/Consulta_Seguimiento_Pedidos.xsd" xmlns="http://tempuri.org/Consulta_Seguimiento_Pedidos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Consulta_Seguimiento_Pedidos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Consulta_Seguimiento_Pedidos" msprop:Generator_UserDSName="Consulta_Seguimiento_Pedidos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Seguimiento_Pedidos" msprop:Generator_TableClassName="Seguimiento_PedidosDataTable" msprop:Generator_TableVarName="tableSeguimiento_Pedidos" msprop:Generator_RowChangedName="Seguimiento_PedidosRowChanged" msprop:Generator_TablePropName="Seguimiento_Pedidos" msprop:Generator_RowDeletingName="Seguimiento_PedidosRowDeleting" msprop:Generator_RowChangingName="Seguimiento_PedidosRowChanging" msprop:Generator_RowEvHandlerName="Seguimiento_PedidosRowChangeEventHandler" msprop:Generator_RowDeletedName="Seguimiento_PedidosRowDeleted" msprop:Generator_RowClassName="Seguimiento_PedidosRow" msprop:Generator_UserTableName="Seguimiento_Pedidos" msprop:Generator_RowEvArgName="Seguimiento_PedidosRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pedido" msprop:Generator_ColumnVarNameInTable="columnpedido" msprop:Generator_ColumnPropNameInRow="pedido" msprop:Generator_ColumnPropNameInTable="pedidoColumn" msprop:Generator_UserColumnName="pedido" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_pedido" msprop:Generator_ColumnVarNameInTable="columnfecha_pedido" msprop:Generator_ColumnPropNameInRow="fecha_pedido" msprop:Generator_ColumnPropNameInTable="fecha_pedidoColumn" msprop:Generator_UserColumnName="fecha_pedido" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre_cliente" msprop:Generator_ColumnVarNameInTable="columnnombre_cliente" msprop:Generator_ColumnPropNameInRow="nombre_cliente" msprop:Generator_ColumnPropNameInTable="nombre_clienteColumn" msprop:Generator_UserColumnName="nombre_cliente" type="xs:string" minOccurs="0" />
+              <xs:element name="estado_actual" msprop:Generator_ColumnVarNameInTable="columnestado_actual" msprop:Generator_ColumnPropNameInRow="estado_actual" msprop:Generator_ColumnPropNameInTable="estado_actualColumn" msprop:Generator_UserColumnName="estado_actual" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre_articulo" msprop:Generator_ColumnVarNameInTable="columnnombre_articulo" msprop:Generator_ColumnPropNameInRow="nombre_articulo" msprop:Generator_ColumnPropNameInTable="nombre_articuloColumn" msprop:Generator_UserColumnName="nombre_articulo" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre_unidad" msprop:Generator_ColumnVarNameInTable="columnnombre_unidad" msprop:Generator_ColumnPropNameInRow="nombre_unidad" msprop:Generator_ColumnPropNameInTable="nombre_unidadColumn" msprop:Generator_UserColumnName="nombre_unidad" type="xs:string" minOccurs="0" />
+              <xs:element name="articulo" msprop:Generator_ColumnVarNameInTable="columnarticulo" msprop:Generator_ColumnPropNameInRow="articulo" msprop:Generator_ColumnPropNameInTable="articuloColumn" msprop:Generator_UserColumnName="articulo" type="xs:string" minOccurs="0" />
+              <xs:element name="precio_pactado" msprop:Generator_ColumnVarNameInTable="columnprecio_pactado" msprop:Generator_ColumnPropNameInRow="precio_pactado" msprop:Generator_ColumnPropNameInTable="precio_pactadoColumn" msprop:Generator_UserColumnName="precio_pactado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:decimal" minOccurs="0" />
+              <xs:element name="importe" msprop:Generator_ColumnVarNameInTable="columnimporte" msprop:Generator_ColumnPropNameInRow="importe" msprop:Generator_ColumnPropNameInTable="importeColumn" msprop:Generator_UserColumnName="importe" type="xs:decimal" minOccurs="0" />
+              <xs:element name="fecha_inicio" msprop:Generator_ColumnVarNameInTable="columnfecha_inicio" msprop:Generator_ColumnPropNameInRow="fecha_inicio" msprop:Generator_ColumnPropNameInTable="fecha_inicioColumn" msprop:Generator_UserColumnName="fecha_inicio" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo" msprop:Generator_ColumnVarNameInTable="columntipo" msprop:Generator_ColumnPropNameInRow="tipo" msprop:Generator_ColumnPropNameInTable="tipoColumn" msprop:Generator_UserColumnName="tipo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

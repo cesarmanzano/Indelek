@@ -1,0 +1,748 @@
+﻿a
+{
+    text-decoration:none;
+}
+
+.Alineacion_Izquierda
+{
+    text-align: left;
+}
+
+.Alineacion_Derecha
+{
+    text-align: right;
+}
+
+.Area_Descripcion_Extendida
+{
+    height: 1em;    
+    width: 400px;    
+    overflow: hidden;
+    background:RGB(238 238 238);
+}
+
+.Area_Descripcion_Extendida:hover
+{
+    /*position: relative;
+    background: RGB(238 238 238);
+    overflow: visible;*/
+}
+
+#Articulo
+{
+    height:100px;
+    border: 1px solid blue;
+    width:  100%;
+}
+
+#Articulo_Agregado
+{
+    margin-top:     20%;
+    background-color:DarkGray; 
+    opacity:        .9; 
+    color:          White;
+    font-weight:    bold;
+    display:        none;
+    text-align:     left;
+    font-weight:    bold;
+    height:         50px;
+    text-indent:    1.5em;   
+    position:       fixed; 
+    width:          1014px;
+    border-bottom-left-radius:  2px;
+    border-bottom-right-radius: 2px;    
+    -webkit-border-bottom-left-radius:  2px;
+    -webkit-border-bottom-right-radius: 2px; 
+    -moz-border-bottom-left-radius:  2px;
+    -moz-border-bottom-right-radius: 2px;     
+    z-index:        100;
+}
+
+#Barra_Derecha_Muestra
+{
+    height: 100px;
+    width: 15%;
+    float: right;
+    margin-top: 2em;
+}
+
+#Barra_Izquierda_Muestra
+{   
+    height: 100px;
+    width: 20%;
+    float: left;
+    /*margin-top: 1em;*/
+    text-align: left;
+    text-indent: 1em;
+}
+
+body
+{
+	font-size: 10pt;
+	font-family:Tahoma;
+    text-align: center;
+    padding: 0em;
+	margin: 0em;
+	width: 100%;		
+}
+
+.Boton
+{
+    background:     rgba(7,86,17,.4);    
+    color:          White;
+    height:         40px;
+    float:          right;
+    font-weight:    bold;
+    width:          200px;
+    border-width:   0px;
+    border-radius:  3px;    
+    box-shadow:     0px 2px 12px rgba(50, 50, 50, 0.75);
+}
+
+.Boton:hover
+{
+    background:     rgba(7,86,17,.6); 
+}
+
+.Calendario
+{    
+    float:      left;
+    height:     43px;
+    overflow:   hidden;    
+    text-align: left;    
+    width:      210px;   
+}
+
+.cmdAceptar
+{
+    background:     rgba(7,86,17,.4);
+    color:          White;
+    height:         40px;
+    float:          right;
+    font-weight:    bold;
+    width:          200px;    
+    border-width:   0px;
+    margin-right:   50px; 
+    box-shadow:     0px 2px 12px rgba(50, 50, 50, 0.75);
+}
+
+.cmdAceptar:hover
+{
+    background:     rgba(7,86,17,.6); 
+}
+
+#cmdArticulo_Agregado
+{
+    background-color:   Green;
+    opacity:            .7;
+    color:              White;
+    height:             99px;
+    width:              200px;    
+    border:             none;
+    border-left:        2px solid lightGray;
+    float:              right;    
+    margin-top:         -15px;    
+}
+
+#cmdArticulo_Agregado:hover
+{
+    opacity: 1;
+}
+
+#Centro_Muestra
+{        
+    float:left;
+    height: 550px;    
+    margin: 0 0 0 2em;
+    position:relative;
+    width: 660px;
+}
+
+.Clave_Articulo
+{
+    color:RGB(62, 62, 62);
+}
+
+#cmdEstado_Cuenta
+{    
+    height:43px;
+    width: 100px;    
+}
+
+.cmdTerminar
+{
+    background-color:   #EBC896;
+    border-radius:      2px;
+}
+
+.cmdTerminar:hover
+{
+    background-color: #DCDCB5;
+}
+
+.Contador_Paginas
+{
+    position: relative;
+    text-align: center;
+    color: RGB(8, 94, 208);
+}
+
+#Cuadros2
+{    
+    margin-top: 0px;
+}
+
+#Cuadros2 section
+{       
+    float: left;
+    margin-left: 5px;
+}
+
+#Cuadros2 section:first-child
+{       
+    margin-left: 0px;
+}
+#Cuadros2 section:last-child
+{       
+    float:right;
+}
+
+.Facturacion {
+    background-color:   RGB(201,201,201);
+    border-radius:      4px;
+    padding:            10px 10px 10px 10px ;
+    text-align:         left;
+    width:              450px;
+}
+
+.Facturacion label{
+    font-weight:bold;    
+}
+
+.cmdFactura{
+    float:right;    
+    background:     rgba(7,86,17,.4);    
+    color:          White;
+    height:         40px;
+    font-weight:    bold;
+    width:          100px;
+    border-width:   0px;
+    border-radius:  3px;    
+    box-shadow:     0px 2px 12px rgba(50, 50, 50, 0.75);
+}
+
+.cmdFactura:hover
+{
+    background:     rgba(7,86,17,.6); 
+}
+
+.filtro
+{
+    color: RGB(8, 94, 208);
+    margin-left: 1em;
+}
+
+.Filtros
+{
+    border: 1px solid GRAY;
+}
+
+.Filtros div:first-child
+{
+    font-size:1.1em;
+    height: 1.5em;
+    background-color:RGB( 34, 61, 98);
+    color: White;
+    font-weight:bold;
+    vertical-align:middle;
+}
+
+.Filtros > a
+{
+    color: Purple;    
+}
+
+.Flotar_Izquierda
+{
+    float:left;
+}
+
+hr
+{
+    background-color: rgb(45, 29, 0);
+    background-color: -moz-linear-gradient(4deg, rgb(45, 29, 0) 0%, rgb(152, 214, 92) 100%);
+    background-color: -webkit-linear-gradient(4deg, rgb(45, 29, 0) 0%, rgb(152, 214, 92) 100%);
+    background-color: -o-linear-gradient(4deg, rgb(45, 29, 0) 0%, rgb(152, 214, 92) 100%);
+    background-color: -ms-linear-gradient(4deg, rgb(45, 29, 0) 0%, rgb(152, 214, 92) 100%);
+    background: linear-gradient(94deg, rgb(45, 29, 0) 0%, rgb(152, 214, 92) 100%);
+}
+
+.href_Carrito
+{
+    background-color:Yellow;
+    border-radius: 3px;
+    padding: 2px 5px 5px 5px;
+    border: 1px solid lightGray;    
+    text-decoration:none; 
+    font-size: .8em;
+    float:right;
+    cursor:pointer;
+}
+
+.Item_Tabla_Carrito_Compras:focus
+{
+    background-color: LightBlue;
+}
+
+.Item_Tabla_Carrito_Compras:blur
+{
+    background-color: White;
+}
+
+.Imagen_Super_Oferta
+{
+    border-right: 1px solid LightGrey;
+}
+
+.Imagen_Muestra
+{
+    height: 100px;
+    width: 150px;
+    background:  transparent url(../Imagenes/Cargando.gif) no-repeat center center;
+}
+
+#Imagen_Principal_Abajo
+{
+    float:right;
+    border-top: 1px solid #777272;
+}
+
+#Imagen_Principal_Arriba
+{
+    float:right;
+    
+}
+
+.Imagenes_Consulta
+{
+    margin-top: 30px;
+}
+
+.Informacion_Muestra  section:first-child
+{
+    color: White;
+    font-weight:bold;
+    height: 1.5em;
+    padding: .2em 0 .2em 0;
+    text-align: center;
+    background-color: RGB(34, 61, 98);
+    border-bottom: 1ps solid DarkGray;
+}
+
+.Informacion_Muestra  section:last-child
+{
+    height: 400px;    
+}
+
+.Lista_Articulos
+{
+    border: 1px solid BLUE;
+}
+
+.Lista_Filtros ul li
+{
+    list-style: none;
+    margin-left: -40px;
+}
+
+
+.Lista_Filtros ul li a
+{
+    text-decoration: none;    
+}
+
+.Lista_Filtros ul li a:hover
+{
+    text-decoration: none;
+}
+
+
+#Login
+{        
+    background:     RGB( 34, 61, 98);
+    border:         1px solid RGB(238, 238, 238);    
+    border-radius:  5px;
+    color:          White;
+    float:          left;
+    margin-left:    30%;
+    margin-top:     10%;
+    font-size:      medium;
+    width:          383px;
+    height:         215px;
+    padding:        3em 3em 3em 3em;
+    text-align:     left;
+}
+
+#Login a
+{        
+    font-size:  small;
+    color:      White;    
+}
+
+#Login a:hover
+{        
+    color:      DarkGreen;    
+}
+
+#Mapa_Sitio
+{
+    font-family:'Browallia New';
+    height: 2em;
+    font-size: medium;
+    padding-top: .5em;
+    text-align: left;        
+}
+
+.Mensaje_Error
+{
+    background-color: RGB(255, 100, 100);
+    border-radius: 4px;
+    color:White;    
+    position: absolute;    
+    margin-top: 30%;
+    margin-left: 230px;
+    width:500px;
+    text-align:center;
+}
+
+.Mensaje_Error div
+{
+    margin-top: 10px;
+}
+
+.NextPreviousButton
+{
+    background-color: Azure;
+    border-style: none;
+    color:White;
+}
+
+.Nombre_Articulo
+{
+    color: RGB(8, 94, 208);
+}
+
+.Opciones_Usuario
+{
+    border-radius: 5px;
+    color: White;
+    font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;    
+    height: 500px;    
+    margin-left: 200px;
+    position:relative;
+    width: 600px;
+}
+
+.Opciones_Usuario tr td
+{
+    background-color: #069;
+    border-radius: 5px;
+    font-size:medium;
+    font-style: italic;
+    font-weight: bold;
+    float: left;
+    height:245px;        
+    /*opacity: .8;    */    
+    text-align:center;
+    width:290px;    
+}
+
+.Opciones_Usuario tr td:hover
+{
+    opacity: 1;
+}
+
+.Opciones_Usuario tr td:last-child
+{
+    margin-left: 2px;
+}
+
+.Pagina_Actual_DataPager
+{
+    color: White;
+    font-weight:bolder;
+    background-color: RGB(8, 94, 208);;    
+    border-radius: 1px;
+    padding: 0 .5em 0 .5em;     
+}
+
+.Redondeado
+{
+    border-radius: 3px;
+    border-width: 0;
+}
+
+.Registro
+{
+    text-align:         left;
+    background:         rgba(157,201,253,.6);
+    width:              700px;
+    height:             300px;
+    overflow:           hidden;
+    padding:            30px 30px 30px 30px;
+    border-radius:      7px;
+}
+
+.Registro_Exitoso
+{
+    margin-top:         200px;
+    text-align:         left;
+    background:         rgba(157,201,253,1);    
+    width:              900px;
+    padding:            30px 30px 30px 30px;
+    height:             50px;
+    border-radius:      4px;    
+    z-index: 99;
+}
+
+.Registro label
+{
+    font-weight: lighter;
+}
+
+.Registro section 
+{    
+    float: left;
+    width: 700px;    
+    height: 220px;    
+}
+
+.Registro section article
+{
+    width:  340px;    
+    float:  left;    
+}
+
+.Registro section article:first-child
+{
+    margin-right: 20px;
+}
+
+.Registro section:last-child
+{
+    height: 200px;
+}
+
+.Registro section article table tr td:first-child
+{
+    width: 150px;
+}
+
+.Section
+{
+    text-align:left;
+}
+
+.Section article
+{    
+    vertical-align: top;
+}
+
+.Section article:last-child
+{
+    border-top: 1px solid LightGrey;
+    
+}
+
+#Site_Map_Principal
+{
+    visibility: hidden;
+}
+
+#Mapa_Sitio
+{
+    height: 2em;
+    text-align:left;    
+}
+
+.Seccion_Carrito_Compras
+{
+    text-align: left;    
+    font-size:  1.2em;
+}
+
+.Seccion_Carrito_Compras section
+{
+    float:      left;
+    text-align: left; 
+    width:      400px;        
+}
+
+.Seccion_Carrito_Compras div table
+{
+    border-width: 0px;
+}
+
+.Seccion_Carrito_Compras div table tr
+{
+    border-width: 0px;
+    height:  2em;    
+}
+
+.Seccion_Carrito_Compras div table tr td
+{
+    border-width: 0px;
+}
+
+#Super_Oferta
+{    
+    text-align: left;    
+}
+
+#Super_Oferta article
+{    
+    float:left;
+}
+
+#Tabla_Envio_Correo
+{        
+    background:     RGBA( 34, 61, 98, 1);
+    border:         2px solid RGB(238, 238, 238);    
+    border-radius:  5px;
+    color:          White;
+    float:          left;
+    margin-left:    20%;
+    margin-top:     10%;
+    font-size:      medium;
+    width:          500px;
+    height:         120px;
+    padding:        3em 3em 3em 3em;
+    text-align:     left;
+}
+
+#Tabla_Envio_Correo input[type=email], 
+                    input[type=text],
+                    input[type=password]
+{            
+    border-radius: 2px;
+    color: RGB(105, 105, 105);
+    height: 2em;
+    text-indent: .5em;
+}
+
+input[type=submit]
+{
+    height: 2em;
+}
+
+#Tabla_Envio_Correo input[type=email]:focus,
+                    input[type=text]:focus,
+                    input[type=password]:focus
+{            
+    color: RGB(71,25,136);
+}
+
+.Tabla_Muestra
+{
+    border-bottom: 1px solid BLUE;
+}
+
+#txtMensaje
+{
+    height:     20px;
+    width:      800px;    
+}
+
+.txtTexto
+{
+    background-color:   LightGray;
+    border:             0;
+    border-radius:      2px;
+    height:             2em;
+    opacity:            0.6;
+    text-indent:        1em;
+    padding: 2px;
+}
+
+.txtTexto:focus
+{
+    background-color: LightBlue;
+    opacity:          1;
+}
+
+.txtTexto:blur
+{
+    background-color:   RGB(238, 238, 238);
+    opacity:            0.6;
+}
+
+.txtTexto:last-child
+{
+    margin-left: 30px;    
+}
+
+.letra-articulo
+{
+    font-family: Arial,Helvetica, Nimbus Sans L, Liberation Sans, FreeSans,sans-serif; 
+    font-size: 13px;
+}
+	
+.slide{
+    width: 670px;
+    height: 445px;
+    margin: -445px auto 2% 325px;
+    /*position: relative;*/
+    margin-left: 325px;
+    margin-top: -457px;
+   
+}
+ 
+
+.slide img{
+    width: 670px;
+    height: 445px;
+    margin: -445px auto 2% 325px;
+    /*position: relative;*/
+    margin-left: 325px;
+    margin-top: -457px;
+}
+ 
+.slide .img2, .slide .img3 {
+    display: none;
+}
+
+.letra-imagen
+{
+    font-size: 13pt;
+}
+
+.icono
+{
+    float:left;
+    margin-top: 2px;
+    margin-right: 10px;
+    cursor:pointer;
+    color: #337AB7;
+}
+
+.icono-level2
+{
+    margin-left:13px;
+}
+
+#ContentPlaceHolder1_Menu_Dinamico a.level3
+{
+    padding-left:45px !important;
+}
+
+#ContentPlaceHolder1_Menu_Dinamico a.level2
+{
+    padding-left:20px !important;
+}
+
+.slider
+{
+   float:right;
+   margin-top:-444px;
+
+}
