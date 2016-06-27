@@ -11,7 +11,7 @@
 <div id="Barra_Izquierda_Muestra">
     <article class="Informacion_Muestra">
         <div class="Filtros">
-            <div>Marcas</div>
+            <div id="filtrostitulo">Marcas</div>
             <asp:ListView ID="Filtros_Marca" runat="server">
                 <LayoutTemplate>
                     <div style="border-radius: 2px; vertical-align:middle;">                                 
@@ -47,7 +47,7 @@
         </div>
         <br /><br />
         <div class="Filtros">
-            <div>Precios</div>
+           <div id="filtrostitulo">Precios</div>
             <asp:ListView ID="Filtros_Precios" runat="server">
                 <LayoutTemplate>
                     <div style="border-radius: 2px; vertical-align:middle;">                                 
@@ -84,9 +84,12 @@
     </article>
 </div>
 
-<div id="Centro_Muestra">
+<%--<div id="Centro_Muestra">--%>
+     <section id="productos">
+         
+         <%--<div class="wrapperproductos">--%>
     <asp:ListView ID="Lista_Articulos" runat="server">
-        <EmptyDataTemplate>
+       <EmptyDataTemplate>
             <table id="Table1" runat="server">
                 <tr>
                     <td style="color:Gray; font-size: 1em; text-align:left">
@@ -103,7 +106,7 @@
                     </td>
                 </tr>
             </table>
-        </EmptyDataTemplate>
+       </EmptyDataTemplate>
         <LayoutTemplate>
             <div style="background:RGBA(223,223,223,.7); height:1.3em; border-radius: 2px; vertical-align:middle;">
                 <label style="color: Blue;">Página</label>
@@ -140,9 +143,10 @@
             </div>
         </LayoutTemplate>
             
-        <ItemTemplate>
-            <tr>
-                <td>
+       <ItemTemplate>
+            <div class="wrapperproductos">
+                    
+                    <div class="fotop">
                     <asp:Image
                         ID="Image1" 
                         runat="server"                         
@@ -151,40 +155,45 @@
                         Height="100px"
                         Width="150px"   
                         ToolTip='<%#"~/fotos/" + DataBinder.Eval(Container.DataItem, "foto")%>'         
-                        ImageUrl='<%#"~/fotos/" + DataBinder.Eval(Container.DataItem, "foto").ToString.Trim%>'/>
-                </td>
-                <td class="Alineacion_Izquierda">
-                   
-                     <a onclick="Datos_Articulo('<%# Eval("articulo")%>')" href="Datos_Articulo.aspx?lcArticulo=<%# Eval("articulo") %>"> <b class="Nombre_Articulo"><%#DataBinder.Eval(Container.DataItem, StrConv("nombre_articulo",vbProperCase))%></b><br /></a>
+                        ImageUrl='<%#"~/fotos/" + DataBinder.Eval(Container.DataItem, "foto").ToString.Trim%>'/></div>
+                
+                   <div class="tyd">
+                     <h5><a onclick="Datos_Articulo('<%# Eval("articulo")%>')" href="Datos_Articulo.aspx?lcArticulo=<%# Eval("articulo") %>"> <b class="Nombre_Articulo"><%#DataBinder.Eval(Container.DataItem, StrConv("nombre_articulo",vbProperCase))%></b><br /></a></h5>
                     
-                    <b class="Clave_Articulo"># Indelek:</b> <%#DataBinder.Eval(Container.DataItem, "articulo")%>
-                    <b class="Clave_Articulo"># Fabricante:</b> <%#DataBinder.Eval(Container.DataItem, "clave_anterior")%>
+                    <p class="txtdesc"><b class="Clave_Articulo"># Indelek:</b> <%#DataBinder.Eval(Container.DataItem, "articulo")%> | 
+                    <b class="Clave_Articulo"># Fabricante:</b> <%#DataBinder.Eval(Container.DataItem, "clave_anterior")%></p>
                     <br />
                         
-                    Disponible <%#Eval("disponible", "{0:0.00}")%><br />
-                    Precio <%#Eval("precio", "{0:c}")%><br />
+                    <p class="txtdesc2">Disponible <%#Eval("disponible", "{0:0.00}")%><br /></p>
+
+                   </div>
+
+                    <div class="pyb">
+                    <p class="txtprecio">Precio</p><p class="precio"> <%#Eval("precio", "{0:c}")%></p><br />
+
                     <a onclick="Datos_Articulo('<%# Eval("articulo")%>')" href="Datos_Articulo.aspx?lcArticulo=<%# Eval("articulo") %>">Mas...</a>
-                    <a 
+                    <div class="agregar"><a 
                         class="href_Carrito"
                         onclick="Muestra_Mensaje('Agregando Artículo al Carrito...')"
                         href='AgregarArticulo.aspx?lcArticulo=<%# Eval("articulo") %>&lnPrecio=<%# Eval("precio") %>'>
                         <strong>Agregar al Carrito</strong>
-                    </a>
-                    <hr /> 
-                </td>
-            </tr>
-        </ItemTemplate>
+                    </a></div>
+                      </div>
+                    </div>
+   </ItemTemplate>
             
-    </asp:ListView>
+   </asp:ListView>
     <div style="text-align:left;">
         <asp:Label 
-            runat="server" 
+            runat=server 
             ID="lblContador" 
             Text="" 
             BorderStyle="None"
             ForeColor="Gray"></asp:Label>
     </div>
-</div>
+<%--</div>--%>
+             <%--</div>--%>
+         </section>
 
     <script src="../Scripts/jquery-2.0.3.js"        type="text/javascript"></script>
     <script src="../Scripts/jquery-1.3.2.min.js"    type="text/javascript"></script>    

@@ -11,7 +11,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
-    <link href="../Content/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <%--<link href="../Content/bootstrap-theme.css" rel="stylesheet" type="text/css" />
     <link href="../Content/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
     <link href="../Content/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="../Scripts/bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css" />
@@ -25,8 +25,62 @@
     <script src="../Scripts/Funciones.js"           type="text/javascript"></script>
     <script src="../Scripts/bootstrap.js"           type="text/javascript"></script>
     <script src="../Scripts/bootstrap.min.js"       type="text/javascript"></script>
-    <script src="../Scripts/bxslider/jquery.bxslider.min.js"       type="text/javascript"></script>
-        
+    <script src="../Scripts/bxslider/jquery.bxslider.min.js"       type="text/javascript"></script>--%>
+        <style type="text/css">
+body {background:url(../imasmenu/fondo.png); margin:0px auto;}
+nav select {display: none;}
+
+@media (max-width: 1047px) {		
+      nav #nav  { display: none !important; background:none; }
+      nav select { display: inline-block; }
+	  #nav2{ display:none;}
+	  .fixed{ display:none !important;}
+	  .W1-h16{display: none !important;}
+			 }
+			 
+		/*	 .nav#dropmenu select{ display:none;}
+ nav select {display: none; }
+    @media (max-width: 1155px) {
+		
+      nav ul{ display: none; }
+      nav select { display: inline-block; }
+	  
+	  nav#dropmenu select{ display: inline-block; }
+	  
+    }*/
+</style>
+
+    <link href="../Estilos/my.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../Estilos/animate.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/Estilos/font-awesome.min.css"><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+<script type="text/javascript" src="../Scripts/modernizr.js"></script>
+<script src="../Scripts/foundation.min.js"></script>
+
+    <style>
+        #Articulo_Agregado
+        {
+            margin-top:     20%;
+            background-color:DarkGray; 
+            opacity:        .9; 
+            color:          White;
+            font-weight:    bold;
+            display:        none;
+            text-align:     left;
+            font-weight:    bold;
+            height:         50px;
+            text-indent:    1.5em;   
+            position:       fixed; 
+            width:          1014px;
+            border-bottom-left-radius:  2px;
+            border-bottom-right-radius: 2px;    
+            -webkit-border-bottom-left-radius:  2px;
+            -webkit-border-bottom-right-radius: 2px; 
+            -moz-border-bottom-left-radius:  2px;
+            -moz-border-bottom-right-radius: 2px;     
+            z-index:        100;
+        }
+    </style>
 </head>
 <body class="body"> 
 <form id="Form1" runat="server" action="">
@@ -34,18 +88,53 @@
     <header id="header">
 		<div class="Contenedor_Principal">
 			    <div>
-                    <ul id="Accesos">   
+                    <%--<ul id="Accesos">   
                         <li> <a id="link_Iniciar_Sesion" href="Login.aspx">Iniciar Sesión</a></li>
                         <li> <a id="link_Cerrar_Sesion" onclick="Activar_Sesion('DesActivar')">Cerrar Sesión</a></li>
-                    </ul>
-
-                    <a href="Principal.aspx"> <asp:Image runat="server" id="Logo" ImageUrl="~/Imagenes/nodisponible.jpg"/></a>               
+                    </ul>--%>
+                    <div id="logo">
+                    <a href="Principal.aspx"> <asp:Image runat="server" id="Logo" src="../imasmenu/Indelek.png" alt="" width="527" height="130" ImageUrl="~/imasmenu/Indelek.png"/></a>   
+                        </div>            
                    
-                     <asp:TextBox ID="txtBuscar" runat="server"></asp:TextBox>
-                    <asp:ImageButton ID="cmdBuscar" runat="server" OnClick="Buscar_Articulos" ImageUrl="~/Imagenes/lupa.jpg" />
+                    <div id="sesion">
+                     <a id="link_Iniciar_Sesion" href="Login.aspx">Iniciar Sesión</a> I <a id="link_Cerrar_Sesion" onclick="Activar_Sesion('DesActivar')">Cerrar Sesión</a>
+                      <%--<img src="imasmenu/carrito.png" alt=""/> --%>
+                        
+                        
+                        <a href="Carrito_Compras.aspx">
+                            <asp:Image ID="Imagen_Carrito" runat="server" ImageUrl="~/Imagenes/Carrito.png" Height="60px" Width="65px" />                          
+                        </a>
+
+                        <a href="Carrito_Compras.aspx">
+                            <asp:Label ID="Texto_Carrito" runat="server" Text="0"></asp:Label>
+                        </a>
+
+                        <br>
+               
+
+                    <div class="box">
+                      <div class="container-4">
+                        <%--<input type="search" id="search" placeholder="Search..." />--%>
+                          <div>
+                        <asp:TextBox ID="txtBuscar" runat="server"></asp:TextBox>
+                       <%-- <button ><i class="fa fa-search"></i></button>--%>
+                          <asp:ImageButton ID="cmdBuscar" runat="server" OnClick="Buscar_Articulos" ImageUrl="~/Imagenes/lupa.jpg" />
+                          </div>
+                      </div>
+                        <br />
+                        Cd. Juárez: (656) 613 8676
+                        <br />
+                        Chihuahua:  (614) 421 7939
+                    </div>
+                        </div>
+<br>
+ 
+</div>
+                     
+                    
                 </div>                
-                <div>     
-                    <div id="Menu_Principal">
+               <%-- <div>    --%> 
+                    <%--<div id="Menu_Principal">
                         <ul style="margin-top: 10px;">
                             <li><a href="Principal.aspx">Productos</a></li>
                             <li><a href="Facturacion.aspx">Facturaci&oacuten</a></li>
@@ -54,19 +143,21 @@
                             <li><a href="Contacto.aspx">Contacto</a></li> 
                             <li><a href="Ridgid.aspx">Ridgid</a></li>                    
                         </ul>                              
-                    </div>
+                    </div>--%>
 
-                        <a href="Carrito_Compras.aspx">
-                            <asp:Image ID="Imagen_Carrito" runat="server" ImageUrl="~/Imagenes/Carrito.png" Height="60px" Width="65px" />                          
-                        </a>
+                    
 
-                        <a href="Carrito_Compras.aspx">
-                            <asp:Label ID="Texto_Carrito" runat="server" Text="0"></asp:Label>
-                        </a>
-                    </div>           
+                        
+                   <%-- </div>     --%>      
 		</div>
 	</header>    
-    
+    <div class="oculto"></div>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+                    
+
+
 	<div class="Contenedor_Principal">
         <div id="Articulo_Agregado">
             <br />
@@ -75,17 +166,17 @@
             </section>
             <input type="button" value="Aceptar" id="cmdArticulo_Agregado"/>            
         </div>
-        <nav id="Navegacion">
-            <div>
+        <%--<nav id="Navegacion">
+            <div>--%>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
-            </div>                        
-        </nav>        
+            <%--</div>                        
+        </nav>    --%>    
 	</div>
 				
     
 
-	<footer id="Footer" style="margin-top: 536px;" >
+	<%--<footer id="Footer" style="margin-top: 536px;" >
 		<div class="Contenedor_Principal">                                
 			<section class="Section_Footer">
                 <ul>
@@ -110,10 +201,142 @@
                 </ul>
             </section>
 		</div>
-	</footer>    
+	</footer>    --%>
+
+    <footer>
+
+        <div id="submenu">
+        <h1>Indelek</h1>
+        Pedidos<br>
+        <a style="color:white" href="Facturacion.aspx">Facturación</a><br>
+        Lista de Precios<br>
+        Términos y Condiciones<br>
+        Mapa del Sitio<br>
+        Aviso de Privacidad
+        </div>
+
+        <div id="chihuahua">
+        <h1>Chihuahua</h1>
+        <div class="overlay" onClick="style.pointerEvents='none'"></div>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=z7Yxou-wYo_o.kJsPeq4RoPxc&z=17" width="300" height="480"></iframe>
+        </div>
+
+        <div id="juarez">
+        <h1>Juárez</h1>
+        <div class="overlay" onClick="style.pointerEvents='none'"></div>
+        <iframe src="https://www.google.es/maps/d/u/0/embed?mid=z7Yxou-wYo_o.k32Jp0sWedSQ&z=17" width="300" height="480"></iframe>
+        </div>
+
+        <div id="contacto">
+        <h1>Contacto</h1>
+        <div id="form"><iframe id="conte" name="conte" class="frame" src="../contacto/contacto.aspx" scrolling="auto" width="95%" height="100%"></iframe></div>
+        </div>
+
+    </footer>
 </form>
 
+    <script src="../Scripts/responsiveslides.min.js"></script>
+<script type="text/javascript" src="../Scripts/jquery.flexisel.js"></script>
+<script src="../Scripts/responsiveiframe.js"></script>
+<script>
+    $(function () {
+      $("#slider1").responsiveSlides({
+        maxwidth: 1920,
+        speed:1000
+      });
+     });
+  </script>
+  
+  <script>
+  ;(function($){          
+      $(function(){
+        $('#conte').responsiveIframe({ xdomain: '*'});
+      });        
+  })(jQuery);
+</script>
+  
+  
+<script>
+var num = 257; //number of pixels before modifying styles
 
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > num) {
+        $('.default').addClass('fixed');
+    } else {
+        $('.default').removeClass('fixed');
+    }
+});
+</script>
+
+<script>
+var num = 257; //number of pixels before modifying styles
+
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > num) {
+        $('.oculto').addClass('mostrar');
+    } else {
+        $('.oculto').removeClass('mostrar');
+    }
+});
+</script>
+
+
+<script>
+jQuery(document).ready
+	 // DOM ready
+	 $(function() {
+      // Create the dropdown base
+      $("<select />").appendTo("nav");
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Seleccionar Sección..."
+      }).appendTo("nav select");
+       // Populate dropdown with menu items
+      $("nav a").each(function() {
+       var el = $(this);
+       $("<option />", {
+           "value"   : el.attr("href"),
+           "text"    : el.text()
+       }).appendTo("nav select");
+      });
+	   // To make dropdown actually work
+	   // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+      $("nav select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+	 });
+</script>
+
+<script type="text/javascript">
+
+$(window).load(function() {
+
+    $("#flexiselDemo3").flexisel({
+        visibleItems:3,
+        animationSpeed: 1000,
+        autoPlay: true,
+        autoPlaySpeed: 3000,            
+        pauseOnHover: true,
+        enableResponsiveBreakpoints: true,
+        responsiveBreakpoints: { 
+            portrait: { 
+                changePoint:480,
+                visibleItems: 1
+            }, 
+            landscape: { 
+                changePoint:640,
+                visibleItems: 2
+            },
+            tablet: { 
+                changePoint:768,
+                visibleItems: 3
+            }
+        }
+    });
+});
+</script>
 </body>
 
   

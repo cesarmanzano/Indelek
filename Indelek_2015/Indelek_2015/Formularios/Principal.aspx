@@ -1,6 +1,36 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="Pagina_Maestra.Master" CodeBehind="Principal.aspx.vb" Inherits="Indelek_2015.Principal" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+  <style type="text/css">
+      .menuu
+      {
+
+      }
+      .slider{
+
+      }
+  </style>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <nav class="default" > 
+        <ul id="nav"> 
+        <li><a href="Principal.aspx" title="Productos" >Productos</a>
+            <ul>
+                <li>
+<asp:Menu ID="Menu_Dinamico" runat="server" class="W1-h16" orientation="Vertical">
+                </asp:Menu>
+                </li>
+            </ul>
+            
+        </li>
+        <li><a href="Facturacion.aspx" title="Facturación">Facturación</a></li>
+        <li><a href="Comentarios.aspx" title="Comentarios">Comentarios</a></li>
+        <li><a href="#" title="Acerca de">Acerca de</a></li>
+        <li><a href="Contacto.aspx" title="Contacto">Contacto</a></li>
+        <li><a href="Ridgid.aspx" title="Ridgid">Ridgid</a></li>
+        </ul> 
+    </nav>
 </asp:Content>
     
 <asp:Content ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -10,104 +40,68 @@
         <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
     </div>
 
-   
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-
-            $('.bxslider').bxSlider({
-                auto: true,
-                autoControls: true,
-                slideWidth:680,
-            });
-
-
-            a = "";
-        $('.level1').parent('li.static').prepend('<span class="glyphicon glyphicon-triangle-right icono iconoDerechaLinea"></span>');
-        $('.level2').parent('li.static').prepend('<span class="glyphicon glyphicon-triangle-right icono icono-level2 iconoDerechaLinea"></span>');
-        //$('.level3').prepend('<span class="glyphicon glyphicon-minus "></span>');
+  
+<%--<div id="Contenedor_Menu_Dinamico" >  --%>    
+    <section id="contenido">     
+        <div>   
         
-        $('.level1').parent('li.static').addClass('nivel1');
-        $('.level2').parent('li.static').addClass('nivel2');
-        $('.level3').parent('li.static').addClass('nivel3');
-     
-        $('.icono').click(function () {
-            var level = $(this).parent('li.static');
-            var colapsado = $(this).hasClass('glyphicon-triangle-right');
-            $(this).toggleClass('glyphicon-triangle-right');
-            $(this).toggleClass('glyphicon-triangle-bottom');
-            //
-           
-            //
+          <div id="secciones">
 
-            // funcion para desplegar linea level 3
-            if ($(this).hasClass('icono-level2')) {
-                if (!(colapsado)) { 
-                    $(level).nextUntil('.nivel2',".nivel3").fadeOut(100);
-                }
-                else {
-                    $(level).nextUntil(".nivel2", ".nivel3").fadeIn(100);
-                }
+    <div id="cuadros" class="iluminacion">
+    <div class="txtcuadro">Iluminación</div>
+    </div>
 
-            }
-            else {
-                if (!(colapsado)) {
-                    $(level).nextUntil('.nivel1').fadeOut(100);
-                }
-                else {
-                    console.log("jijij2");
-                    $(level).nextUntil('.nivel1','.nivel2').fadeIn(100);
-                    a = $(level);
-                    $(level).nextUntil('.nivel1','.nivel2').find('.icono-level2').removeClass('glyphicon-triangle-bottom');
-                    $(level).nextUntil('.nivel1','.nivel2').find('.icono-level2').addClass('glyphicon-triangle-right');
-                   
-                }
+    <div id="cuadros" class="soporte">
+    <div class="txtcuadro">Soporteria</div>
+    </div>
 
-            }
-        });
-        $(".nivel2").hide();
-        $(".nivel3").hide();
-     });
+    <div id="cuadros" class="herramienta">
+    <div class="txtcuadro">Herramienta</div>
+    </div>
+
+    <div id="cuadros" class="cable">
+    <div class="txtcuadro">Cable</div>
+    </div>
+
+    </div>
 
 
-    </script>
-
-<div id="Contenedor_Menu_Dinamico" >                                                    
-    <asp:Menu ID="Menu_Dinamico"  runat="server" 
-                staticdisplaylevels="3"
-                staticsubmenuindent="10" 
-                orientation="Vertical"
-                onmenuitemclick="Menu_Dinamico_MenuItemClick" 
-                style=" font-size:      11pt;
-	                    font-family:    Tahoma;
-                        padding:        5px;
-                        margin-left:    3px;
-                        margin-top:     15px;
-                        text-align:     left;
-                        float:          left;
-                        position:       relative;
-                        z-index:        10;
-                        border-style:   none solid solid;
-                        border:         1px solid #223B65;        
-                        height:         445px; 
-                        width:          285px;
-                        overflow-x:hidden; 
-                        overflow-y:scroll;
-                         ">
-    </asp:Menu>  
-<div>
-    <div class="slider">
+            <div class="menuu">                                      
+                <%--<asp:Menu ID="Menu_Dinamico" runat="server" class="W1-h16" orientation="Vertical">
+                </asp:Menu> --%> 
+           </div>
+<%--<div>--%>
+    <%--<div class="slider">
         <ul class="bxslider"> 
           <li> <a id="hrefImagen28" href="javascript:void(0)"> <asp:Image ID="Image28" ImageUrl="~/ImagenesUsuario/S1.jpg" runat="server" /></a></li>
           <li> <a id="hrefImagen29" href="javascript:void(0)"> <asp:Image ID="Image29" ImageUrl="~/ImagenesUsuario/S2.jpg" runat="server" /></a></li>
           <li> <a id="hrefImagen30" href="javascript:void(0)"> <asp:Image ID="Image30" ImageUrl="~/ImagenesUsuario/S3.jpg" runat="server" /></a></li>
           <li> <a id="hrefImagen31" href="javascript:void(0)"> <asp:Image ID="Image31" ImageUrl="~/ImagenesUsuario/S4.jpg" runat="server" /></a></li>
         </ul>
-     </div>
-
+     </div>--%>
+            <div class="slider">
+    <ul class="rslides" id="slider1">
+        <li><a id="hrefImagen28" href="javascript:void(0)"> <asp:Image ID="Image28" ImageUrl="../imasmenu/m1.jpg" runat="server" /></a></li>
+        <li><a id="hrefImagen29" href="javascript:void(0)"> <asp:Image ID="Image29" ImageUrl="../imasmenu/m2.jpg" runat="server" /></a></li>
+        <li><a id="hrefImagen30" href="javascript:void(0)"> <asp:Image ID="Image30" ImageUrl="../imasmenu/m3.jpg" runat="server" /></a></li>
+        <li><a id="hrefImagen31" href="javascript:void(0)"> <asp:Image ID="Image31" ImageUrl="../imasmenu/m3.jpg" runat="server" /></a></li>
+    </ul>
+                </div>
+            </div>
+    </section>
 <br />
+    <div id="logotipos">
+<ul id="flexiselDemo3">
+    <li><img src="../imasmenu/philips.png" width="230" height="47" /></li>
+    <li><img src="../imasmenu/rawelt.png" width="215" height="47" /></li>
+    <li><img src="../imasmenu/thomas-betts.png" /></li>
+    <li><img src="../imasmenu/viakon.png" width="223" height="46" /></li>
+    </ul>    
+</div>
 
-    <table  style=" width:100%; cellspacing:10; cellpadding:10";>
+  
+
+    <table  style=" width:100%; cellspacing:10; cellpadding:10;display:none">
         <tr>
             <td>
                 <a id="hrefImagen1" href="javascript:void(0)">
@@ -143,11 +137,11 @@
     </table>
     <br />
     
-    <table>
-        <tr>   
+    <table style="display:none">
+        <tr>
             <td>
-               <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
                <a id="hrefImagen4" href="javascript:void(0)">
+                   <asp:Label ID="txtD1" runat="server" Text=""></asp:Label>
                     <asp:Image
                         ID="Image4"
                         Height="240px"
@@ -158,6 +152,7 @@
             </td>
             <td>
                 <table style="margin-left: -4px;">
+
                     <tr>
                         <td>
                             <a id="hrefImagen5" href="javascript:void(0)">
@@ -194,10 +189,8 @@
                 </table>
             </td>
             <td>
-               <%-- <a id="text3" href="javascript:void(0)" style="text-decoration: none;">  --%>
-                 <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
-              <%--  </a>--%>
-                <a id="hrefImagen8" href="javascript:void(0)" style="text-decoration: none;">          
+                <a id="hrefImagen8" href="javascript:void(0)" style="text-decoration: none;">
+          
                     <asp:Image
                         ID="Image8"
                         Height="240px"
@@ -244,8 +237,8 @@
                 </table>
             </td>
             <td>
-                <asp:Label ID="Label4" runat="server" Text="Descripción ejemplo"></asp:Label>
-                <a id="hrefImagen12" href="javascript:void(0)">                
+                <a id="hrefImagen12" href="javascript:void(0)">
+                
                     <asp:Image
                         ID="Image12"
                         Height="240px"
@@ -256,6 +249,7 @@
             </td>
             <td>
                 <table style="margin-left: -4px;">
+
                     <tr>
                         <td>
                             <a id="hrefImagen13" href="javascript:void(0)">
@@ -294,11 +288,11 @@
         </tr>
     </table>
 
-    <table>
+    <table style="display:none">
         <tr>
             <td>
-                <asp:Label ID="Label5" runat="server" Text="Descripción ejemplo"></asp:Label>
-                <a id="hrefImagen16" href="javascript:void(0)">                  
+                <a id="hrefImagen16" href="javascript:void(0)">
+                   
                     <asp:Image
                         ID="Image16"
                         Height="240px"
@@ -310,6 +304,7 @@
             </td>
             <td>
                 <table style="margin-left: -4px;">
+
                     <tr>
                         <td>
                             <a id="hrefImagen17" href="javascript:void(0)">
@@ -346,8 +341,8 @@
                 </table>
             </td>
             <td>
-                <asp:Label ID="Label6" runat="server" Text="Descripción ejemplo"></asp:Label>
-                <a id="hrefImagen20" href="javascript:void(0)">                  
+                <a id="hrefImagen20" href="javascript:void(0)">
+                   
                     <asp:Image
                         ID="Image20"
                         Height="240px"
@@ -395,8 +390,8 @@
                 </table>
             </td>
             <td>
-                <asp:Label ID="Label7" runat="server" Text="Descripción ejemplo"></asp:Label>
-                <a id="hrefImagen24" href="javascript:void(0)">                  
+                <a id="hrefImagen24" href="javascript:void(0)">
+                   
                     <asp:Image
                         ID="Image24"
                         Height="240px"
@@ -445,10 +440,36 @@
             </td>
         </tr>
     </table>
-    </div>
+    <%--</div>--%>
 
-</div>
-
+<%--</div>--%>
+    <script>
+jQuery(document).ready
+	 // DOM ready
+	 $(function() {
+      // Create the dropdown base
+      $("<select />").appendTo("nav");
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Seleccionar Sección..."
+      }).appendTo("nav select");
+       // Populate dropdown with menu items
+      $("nav a").each(function() {
+       var el = $(this);
+       $("<option />", {
+           "value"   : el.attr("href"),
+           "text"    : el.text()
+       }).appendTo("nav select");
+      });
+	   // To make dropdown actually work
+	   // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+      $("nav select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+	 });
+</script>
 <script type="text/javascript">
 
     $("#hrefImagen1").attr("href", $("#ContentPlaceHolder1_Image1").attr("AlternateText"));
@@ -486,15 +507,6 @@
     $("#hrefImagen29").attr("href", $("#ContentPlaceHolder1_Image29").attr("AlternateText"));
     $("#hrefImagen30").attr("href", $("#ContentPlaceHolder1_Image30").attr("AlternateText"));
     $("#hrefImagen31").attr("href", $("#ContentPlaceHolder1_Image31").attr("AlternateText"));
-
-    
-    $("#ContentPlaceHolder1_Label3").attr("text", $("#ContentPlaceHolder1_Label3").text());
-    //$("#ContentPlaceHolder1_Label1").text("AlternateText");
-    //$("#ContentPlaceHolder1_Label3").text("AlternateText");
-    //$("#ContentPlaceHolder1_Label4").text("AlternateText");
-    //$("#ContentPlaceHolder1_Label5").text("AlternateText");
-    //$("#ContentPlaceHolder1_Label6").text("AlternateText");
-    //$("#ContentPlaceHolder1_Label7").text("AlternateText");
 
 </script>
 

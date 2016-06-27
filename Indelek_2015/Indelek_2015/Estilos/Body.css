@@ -370,15 +370,15 @@ hr
 #Login
 {        
     background:     RGB( 34, 61, 98);
-    border:         1px solid RGB(238, 238, 238);    
+    border:         2px solid RGB(238, 238, 238);    
     border-radius:  5px;
     color:          White;
     float:          left;
     margin-left:    30%;
     margin-top:     10%;
     font-size:      medium;
-    width:          383px;
-    height:         215px;
+    width: 319px;
+    height: 217px;
     padding:        3em 3em 3em 3em;
     text-align:     left;
 }

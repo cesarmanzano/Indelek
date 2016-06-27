@@ -80,8 +80,8 @@ function Cambia_Valor_Control(lcControl, lcValor, cPropiedad) {
 
 function Informacion_Articulo(lcArticulo, lcDescripcion) {
 
-    //window.open("Informacion_Articulo.aspx?lcArticulo=" + lcArticulo, "ventana", "fullscreen=1");
-    //focus();
+    window.open("Informacion_Articulo.aspx?lcArticulo=" + lcArticulo, "ventana", "fullscreen=1");
+    focus();
 
     //    window.showModalDialog(
     //        'Informacion_Articulo.aspx?lcArticulo=' + lcArticulo,
