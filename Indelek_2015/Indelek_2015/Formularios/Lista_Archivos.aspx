@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Lista_Archivos.aspx.vb" Inherits="Ejemplo_Archivos.Lista_Archivos" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Lista_Archivos.aspx.vb" Inherits="Indelek_2015.Lista_Archivos" %>
 
 <!DOCTYPE html>
 
