@@ -16,11 +16,11 @@
     <nav class="default" > 
         <ul id="nav"> 
         <li><a href="Principal.aspx" title="Productos" >Productos</a>
-            <ul>
-                <li>
+            <ul class="W1-h16">
+                <%--<li>--%>
 <asp:Menu ID="Menu_Dinamico" runat="server" class="W1-h16" orientation="Vertical">
                 </asp:Menu>
-                </li>
+                <%--</li>--%>
             </ul>
             
         </li>
@@ -45,27 +45,6 @@
     <section id="contenido">     
         <div>   
         
-          <div id="secciones">
-
-    <div id="cuadros" class="iluminacion">
-    <div class="txtcuadro">Iluminación</div>
-    </div>
-
-    <div id="cuadros" class="soporte">
-    <div class="txtcuadro">Soporteria</div>
-    </div>
-
-    <div id="cuadros" class="herramienta">
-    <div class="txtcuadro">Herramienta</div>
-    </div>
-
-    <div id="cuadros" class="cable">
-    <div class="txtcuadro">Cable</div>
-    </div>
-
-    </div>
-
-
             <div class="menuu">                                      
                 <%--<asp:Menu ID="Menu_Dinamico" runat="server" class="W1-h16" orientation="Vertical">
                 </asp:Menu> --%> 
@@ -88,6 +67,26 @@
     </ul>
                 </div>
             </div>
+
+        <div id="secciones">
+
+    <div id="cuadros" class="iluminacion">
+    <div class="txtcuadro">Iluminación</div>
+    </div>
+
+    <div id="cuadros" class="soporte">
+    <div class="txtcuadro">Soporteria</div>
+    </div>
+
+    <div id="cuadros" class="herramienta">
+    <div class="txtcuadro">Herramienta</div>
+    </div>
+
+    <div id="cuadros" class="cable">
+    <div class="txtcuadro">Cable</div>
+    </div>
+
+    </div>
     </section>
 <br />
     <div id="logotipos">
