@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,8 +45,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 10.0\ReportViewer\Microsoft.ReportViewer.WebForms.dll</HintPath>
     </Reference>
-    <Reference Include="RJS.Web.WebControl.PopCalendar.Net.2008">
-      <HintPath>..\..\..\Referencias_Locales\RJS.Web.WebControl.PopCalendar.Net.2008.dll</HintPath>
+    <Reference Include="RJS.Web.WebControl.PopCalendar.Net.2008, Version=8.1.3125.36581, Culture=neutral, PublicKeyToken=5bac9568331177db, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Bin\RJS.Web.WebControl.PopCalendar.Net.2008.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

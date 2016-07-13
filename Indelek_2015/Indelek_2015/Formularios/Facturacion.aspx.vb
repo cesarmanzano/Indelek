@@ -95,6 +95,7 @@ Public Class Facturacion
         If Resultado.Rows.Count <> 0 Then
             lcCantidad_Letras = Numero_Letras(Valor(Resultado, "total", 1).ToString)
             ' lcQR = Genera_QR(AInt(Valor(Resultado, "factura", 1)), AInt(Session("nCliente")), "Factura")
+            lcQR = ""
 
             lnCliente = AInt(Session("nCliente"))
 
