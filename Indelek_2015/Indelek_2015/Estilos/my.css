@@ -3,8 +3,9 @@
 
 /* Estilos */
 
-body, h1, h2, h3, h4, h5, h6, h7, p, a, footer, .letterpress, #inicio, footer, .icono, .readmore, textarea, input[type="text"], header, .iconos, #nosotros, .puertas, .texto, .codiprog, .codiprog3, nav select, .txtcuadro, .W1-h16 nav {font-family: 'Open Sans', sans-serif; color:#ffffff; text-align:center; font-style:normal; font-weight:400; font-size:18px;}
-
+body, h1, h2, h3, h4, h5, h6, h7, p, a, b, footer, .letterpress, #inicio, footer, .icono, .readmore, textarea, input[type="text"], input[type="password"], input[type="tel"], input[type="email"], header, .iconos, #nosotros, .puertas, .texto, .codiprog, .codiprog3, nav select, .txtcuadro, .W1-h16 nav {font-family: 'Open Sans', sans-serif; color:#ffffff; text-align:center; font-style:normal; font-weight:400; font-size:18px;}
+b {color:black;
+}
 h1{color:#ffffff;  text-shadow: black 0.1em 0.1em 0.2em; font-size: 36px; line-height:1.3em; margin:10px 0px 10px 0px; text-align:center;}
 
 h2{font-size: 24px; padding-top:10px; text-align:center; margin:0px 0px 30px 0px; color:#000000; text-shadow:0 1px 0 #FFFFFF; text-transform:uppercase; font-weight:400;}
@@ -90,10 +91,23 @@ box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.35); border-top:none; border-bottom:non
 #cuadros{ width:245px; height:149px; display:inline-block; border:#000000 solid 2px; -webkit-box-shadow: 0px 7px 9px 0px rgba(0, 0, 0, 0.75);
 -moz-box-shadow:    0px 7px 9px 0px rgba(0, 0, 0, 0.75);
 box-shadow:         0px 7px 9px 0px rgba(0, 0, 0, 0.75); margin:10px;}
-
+#Login {
+    color:black;
+    width:100%;
+    text-align:center;
+}
+.loginn {
+    text-align:right;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px;
+}
+.espacio{
+    height:50px;
+}
 .txtcuadro{ background:#7f2346; padding:10px 0px; margin:105px 0px 0px 0px; font-weight:600;}
 #ctl00_Logo{height: auto !important;  width: 427px !important;}
-#ctl00_txtBuscar{display: inline-block; vertical-align: top; width: 20em;}
+#ctl00_txtBuscar, #ctl00_ContentPlaceHolder1_txtUsuario, #ctl00_ContentPlaceHolder1_txtContrasena, .txtTexto{display: inline-block; vertical-align: top; width: 20em; color:black}
 #ctl00_cmdBuscar{margin: 0px 0px 0px -4px; background: #ffcd00; padding: 0px 0px 3px 0px;}
 .iluminacion{background:url(../imasmenu/iluminacion.jpg);}
 .soporte{ background:url(../imasmenu/soporteria.jpg);}
@@ -136,7 +150,7 @@ box-shadow:         0px 7px 9px 0px rgba(0, 0, 0, 0.75); margin:10px;}
 footer{ background:url(../imasmenu/footer.png) top; width:100%; height:auto; text-align:center;}
 
 #submenu, #chihuahua, #juarez, #contacto{ max-width:350px; width:100%; height:auto; text-align:center; display:inline-block; margin:5px; vertical-align:top; font-size:24px;}
-
+#submenu { max-width:150px;}
 .overlay {
    background:transparent; 
    position:relative; 
@@ -145,7 +159,10 @@ footer{ background:url(../imasmenu/footer.png) top; width:100%; height:auto; tex
    top:542px;  /* your iframe height */
    margin-top:-542px;  /* your iframe height */
 }
+.txtTexto
+{
 
+}
 #submenu h1, #chihuahua h1, #juarez h1, #contacto h1{ font-size:24px;}
 
 #submenu{font-size:16px; text-align:left;}
@@ -220,7 +237,7 @@ background:#270019; margin:5px 0px; border-bottom:#FFFFFF solid 1px; border-top:
 
 #nav ul {position:absolute; display:none; top: 64px; padding: 0px;}
 
-#nav li ul a, #nav li ul a:hover{width:91%; height:auto; float:left; font-size: 14px; padding: 10px;}
+#nav li ul a, #nav li ul a:hover{text-align:left;width:91%; height:auto; float:left; font-size: 14px; padding: 10px;}
 
 #nav ul ul{top:auto;}	
 

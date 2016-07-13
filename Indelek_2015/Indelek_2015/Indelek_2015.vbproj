@@ -97,11 +97,17 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Estilos\animate.css" />
+    <Content Include="Estilos\app.css" />
     <Content Include="Estilos\Body.css" />
     <Content Include="Estilos\Calendario.css" />
     <Content Include="Estilos\Footer.css" />
+    <Content Include="Estilos\foundation.css" />
     <Content Include="Estilos\Header.css" />
+    <Content Include="Estilos\icons.png" />
     <Content Include="Estilos\jquery-ui.css" />
+    <Content Include="Estilos\my.css" />
+    <Content Include="Estilos\photoswipe.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Formularios\AgregarArticulo.aspx" />
     <Content Include="Formularios\Carrito_Compras.aspx" />

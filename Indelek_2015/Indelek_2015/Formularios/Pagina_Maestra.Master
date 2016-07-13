@@ -48,6 +48,14 @@ nav select {display: none;}
 	  nav#dropmenu select{ display: inline-block; }
 	  
     }*/
+
+        .footer{
+            transition: height 2s;
+        }
+        .footer:hover
+        {
+            height:
+        }
 </style>
 
     <link href="../Estilos/my.css" rel="stylesheet" type="text/css">
@@ -203,7 +211,7 @@ nav select {display: none;}
 		</div>
 	</footer>    --%>
 
-    <footer>
+    <footer class="footer">
 
         <div id="submenu">
         <h1>Indelek</h1>

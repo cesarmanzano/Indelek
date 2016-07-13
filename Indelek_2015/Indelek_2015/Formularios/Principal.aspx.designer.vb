@@ -12,25 +12,7 @@ Option Explicit On
 
 
 Partial Public Class Principal
-
-    '''<summary>
-    '''Control Menu2.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Menu2 As Global.System.Web.UI.WebControls.Menu
-
-    '''<summary>
-    '''Control SiteMapDataSource1.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents SiteMapDataSource1 As Global.System.Web.UI.WebControls.SiteMapDataSource
-
+    
     '''<summary>
     '''Control Menu_Dinamico.
     '''</summary>
@@ -39,7 +21,25 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Menu_Dinamico As Global.System.Web.UI.WebControls.Menu
-
+    
+    '''<summary>
+    '''Control Menu2.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Menu2 As Global.System.Web.UI.WebControls.Menu
+    
+    '''<summary>
+    '''Control SiteMapDataSource1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents SiteMapDataSource1 As Global.System.Web.UI.WebControls.SiteMapDataSource
+    
     '''<summary>
     '''Control Image28.
     '''</summary>
@@ -48,7 +48,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image28 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image29.
     '''</summary>
@@ -57,7 +57,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image29 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image30.
     '''</summary>
@@ -66,7 +66,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image30 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image31.
     '''</summary>
@@ -75,7 +75,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image31 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image1.
     '''</summary>
@@ -84,7 +84,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image1 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image2.
     '''</summary>
@@ -93,7 +93,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image2 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image3.
     '''</summary>
@@ -102,16 +102,16 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image3 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
-    '''Control Label1.
+    '''Control txtD1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
-
+    Protected WithEvents txtD1 As Global.System.Web.UI.WebControls.Label
+    
     '''<summary>
     '''Control Image4.
     '''</summary>
@@ -120,7 +120,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image4 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image5.
     '''</summary>
@@ -129,7 +129,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image5 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image6.
     '''</summary>
@@ -138,7 +138,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image6 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image7.
     '''</summary>
@@ -147,16 +147,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image7 As Global.System.Web.UI.WebControls.Image
-
-    '''<summary>
-    '''Control Label3.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
-
+    
     '''<summary>
     '''Control Image8.
     '''</summary>
@@ -165,7 +156,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image8 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image9.
     '''</summary>
@@ -174,7 +165,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image9 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image10.
     '''</summary>
@@ -183,7 +174,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image10 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image11.
     '''</summary>
@@ -192,16 +183,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image11 As Global.System.Web.UI.WebControls.Image
-
-    '''<summary>
-    '''Control Label4.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
-
+    
     '''<summary>
     '''Control Image12.
     '''</summary>
@@ -210,7 +192,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image12 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image13.
     '''</summary>
@@ -219,7 +201,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image13 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image14.
     '''</summary>
@@ -228,7 +210,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image14 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image15.
     '''</summary>
@@ -237,16 +219,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image15 As Global.System.Web.UI.WebControls.Image
-
-    '''<summary>
-    '''Control Label5.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
-
+    
     '''<summary>
     '''Control Image16.
     '''</summary>
@@ -255,7 +228,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image16 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image17.
     '''</summary>
@@ -264,7 +237,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image17 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image18.
     '''</summary>
@@ -273,7 +246,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image18 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image19.
     '''</summary>
@@ -282,16 +255,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image19 As Global.System.Web.UI.WebControls.Image
-
-    '''<summary>
-    '''Control Label6.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
-
+    
     '''<summary>
     '''Control Image20.
     '''</summary>
@@ -300,7 +264,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image20 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image21.
     '''</summary>
@@ -309,7 +273,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image21 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image22.
     '''</summary>
@@ -318,7 +282,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image22 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image23.
     '''</summary>
@@ -327,16 +291,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image23 As Global.System.Web.UI.WebControls.Image
-
-    '''<summary>
-    '''Control Label7.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Label7 As Global.System.Web.UI.WebControls.Label
-
+    
     '''<summary>
     '''Control Image24.
     '''</summary>
@@ -345,7 +300,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image24 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image25.
     '''</summary>
@@ -354,7 +309,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image25 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image26.
     '''</summary>
@@ -363,7 +318,7 @@ Partial Public Class Principal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Image26 As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Image27.
     '''</summary>

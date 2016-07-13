@@ -1,5 +1,18 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="Pagina_Maestra.Master" CodeBehind="Login.aspx.vb" Inherits="Indelek_2015.Login1" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">            
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">   
+    <style type="text/css">
+body {background:url(../imasmenu/fondo.png); margin:0px auto;}
+
+
+
+</style>
+
+<link href="../Estilos/my.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../Estilos/animate.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/Estilos/font-awesome.min.css"><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+<script type="text/javascript" src="../Scripts/modernizr.js"></script>
+<script src="../Scripts/foundation.min.js"></script>         
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="Mapa_Sitio">
@@ -10,36 +23,36 @@
 <div>
     <table id="Login">
         <tr>
-            <td>Cliente</td>
-            <td>
+            <td></td>
+            <td class="espacio"><p class="loginn">Cliente&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                 <asp:TextBox                                
                     required="required"
                     ID="txtUsuario"
                     placeholder="Número de Cliente"            
-                    class="Redondeado"
+                    
                     autocomplete="on"
                     runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
-            <td>Contraseña</td>
-            <td>
+            <td></td>
+            <td class="espacio"><p class="loginn">Contraseña</p>
                 <asp:textbox                    
                     ID="txtContrasena" 
                     required="required"
                     type="Password"
                     placeholder="Contraseña"
-                    class="Redondeado"
                     runat="server"></asp:textbox>
             </td>
         </tr>
         <tr>
             <td></td>
-            <td class="Redondeado">
-                <asp:Button 
+            <td class="espacio">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button 
                     ID="cmdIniciar"                      
                     runat="server"
                     OnClientClick="Valida_Usuario"
+                    CssClass="agregar"
                     Text="Iniciar"/>
             </td>                
         </tr>            

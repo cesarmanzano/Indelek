@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class Pagina_Maestra
-
+    
     '''<summary>
     '''Control head.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class Pagina_Maestra
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents head As Global.System.Web.UI.WebControls.ContentPlaceHolder
-
+    
     '''<summary>
     '''Control Form1.
     '''</summary>
@@ -30,7 +30,7 @@ Partial Public Class Pagina_Maestra
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Form1 As Global.System.Web.UI.HtmlControls.HtmlForm
-
+    
     '''<summary>
     '''Control Logo.
     '''</summary>
@@ -39,25 +39,7 @@ Partial Public Class Pagina_Maestra
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Logo As Global.System.Web.UI.WebControls.Image
-
-    '''<summary>
-    '''Control txtBuscar.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txtBuscar As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control cmdBuscar.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents cmdBuscar As Global.System.Web.UI.WebControls.ImageButton
-
+    
     '''<summary>
     '''Control Imagen_Carrito.
     '''</summary>
@@ -66,7 +48,7 @@ Partial Public Class Pagina_Maestra
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Imagen_Carrito As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control Texto_Carrito.
     '''</summary>
@@ -75,7 +57,34 @@ Partial Public Class Pagina_Maestra
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Texto_Carrito As Global.System.Web.UI.WebControls.Label
-
+    
+    '''<summary>
+    '''Control txtBuscar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtBuscar As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''Control cmdBuscar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents cmdBuscar As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''Control ContentPlaceHolder2.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ContentPlaceHolder2 As Global.System.Web.UI.WebControls.ContentPlaceHolder
+    
     '''<summary>
     '''Control ContentPlaceHolder1.
     '''</summary>

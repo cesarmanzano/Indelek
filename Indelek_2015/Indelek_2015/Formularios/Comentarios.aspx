@@ -11,25 +11,25 @@
         <hr />
     </div>
     <br />
-    <table>
+    <table align="center">
         <tr>
-            <td><b>Nombre</b></td>
+            <td style="color:black"><b>Nombre</b></td>
             <td><asp:TextBox runat="server" ID="txtNombre" required="required" CssClass="txtTexto" Columns="40"></asp:TextBox></td>
         </tr>
         <tr>
-            <td><b>Empresa o Raz&oacuten Social</b></td>
+            <td style="color:black"><b>Empresa o Raz&oacuten Social</b></td>
             <td><asp:TextBox ID="txtEmpresa" runat="server" CssClass="txtTexto" Columns="40"></asp:TextBox></td>            
         </tr>
         <tr>
-            <td><b>Telefono</b></td>
+            <td style="color:black"><b>Telefono</b></td>
             <td><asp:TextBox ID="txtTelefono" runat="server" required="required" type="tel" Columns="40" CssClass="txtTexto"></asp:TextBox></td>            
         </tr>
         <tr>
-            <td><b>Correo Electr&oacutenico</b></td>
+            <td style="color:black"><b>Correo Electr&oacutenico</b></td>
             <td><asp:TextBox ID="txtCorreo" runat="server" Columns="40" required="required" type="email" CssClass="txtTexto"></asp:TextBox></td>
         </tr>
         <tr>
-            <td><b>Comentarios</b></td>
+            <td style="color:black"><b>Comentarios</b></td>
             <td><asp:TextBox 
                 ID="txtComentarios" 
                 runat="server" 
@@ -45,7 +45,7 @@
             <td>
                 <asp:Button 
                     runat="server" 
-                    CssClass="Boton"
+                    CssClass="agregar"
                     ID="cmdComentarios"
                     Text="Envíar"/>
             </td>

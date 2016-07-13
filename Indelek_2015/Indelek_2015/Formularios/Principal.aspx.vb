@@ -90,20 +90,6 @@ Public Class Principal
     End Sub
 
 
-    Sub Pinta_Descripciones()
-        Dim loComando As SqlCommand
-
-        loComando = Crea_SP("Indelek.dbo.Trae_Descripciones_Sitio")
-        Carga_Tabla(loComando, Datos)
-
-        Me.Label1.Text = Valor(Datos, "nombre_descripcion", 0).Trim
-        Me.Label3.Text = Valor(Datos, "nombre_descripcion", 1).Trim
-        Me.Label4.Text = Valor(Datos, "nombre_descripcion", 2).Trim
-        Me.Label5.Text = Valor(Datos, "nombre_descripcion", 3).Trim
-        Me.Label6.Text = Valor(Datos, "nombre_descripcion", 4).Trim
-        Me.Label7.Text = Valor(Datos, "nombre_descripcion", 5).Trim
-
-    End Sub
     Sub Pinta_URLs()
         Dim loComando As SqlCommand
         
