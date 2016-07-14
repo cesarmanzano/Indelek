@@ -85,7 +85,7 @@
             </div>
       <%-- </div>--%>
             <br />
-       <hr  style="width: 940px; margin-left: -224px;" />
+       <%--<hr  style="width: 940px; margin-left: -224px;" />--%>
    <%-- </section> --%> 
                 </div>
      <%--</section>--%>

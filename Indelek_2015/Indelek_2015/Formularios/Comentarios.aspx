@@ -11,7 +11,7 @@
         <hr />
     </div>
     <br />
-    <table align="center">
+    <table>
         <tr>
             <td style="color:black"><b>Nombre</b></td>
             <td><asp:TextBox runat="server" ID="txtNombre" required="required" CssClass="txtTexto" Columns="40"></asp:TextBox></td>
@@ -45,7 +45,7 @@
             <td>
                 <asp:Button 
                     runat="server" 
-                    CssClass="agregar"
+                    CssClass="agregar2"
                     ID="cmdComentarios"
                     Text="Envíar"/>
             </td>

@@ -12,7 +12,7 @@
     <article class="Informacion_Muestra">
         <div class="Filtros">
             <div id="filtrostitulo">Marcas</div>
-            <asp:ListView ID="Filtros_Marca" runat="server">
+            <asp:ListView ID="Filtros_Marca" runat="server" style="text-align:left">
                 <LayoutTemplate>
                     <div style="border-radius: 2px; vertical-align:middle;">                                 
                         <table>
@@ -36,7 +36,9 @@
                     </tr>
                 </ItemTemplate>
             </asp:ListView>
-            <a  class="filtro"
+            <br />
+                            <br />
+            <a  class="agregar"
                 href="Prueba.aspx?cTexto=<%=
  Request.QueryString("cTexto")%>&cPrecio=<%=
                 Request.QueryString("cPrecio")
@@ -48,7 +50,7 @@
         <br /><br />
         <div class="Filtros">
            <div id="filtrostitulo">Precios</div>
-            <asp:ListView ID="Filtros_Precios" runat="server">
+            <asp:ListView ID="Filtros_Precios" runat="server" style="text-align:left">
                 <LayoutTemplate>
                     <div style="border-radius: 2px; vertical-align:middle;">                                 
                         <table>
@@ -59,6 +61,7 @@
                 <ItemTemplate>
                     <tr>
                         <td>
+                           
                             <a class="filtro"
                                href="Prueba.aspx?cTexto=<%=                                
  Request.QueryString("cTexto")
@@ -72,7 +75,9 @@
                     </tr>
                 </ItemTemplate>
             </asp:ListView>
-            <a  class="filtro"
+            <br />
+                            <br />
+            <a  class="agregar"
                 href="Prueba.aspx?cTexto=<%=
  Request.QueryString("cTexto")%>&cMarca=<%=
                 Request.QueryString("cMarca")%>
@@ -108,8 +113,8 @@
             </table>
        </EmptyDataTemplate>
         <LayoutTemplate>
-            <div style="background:RGBA(223,223,223,.7); height:1.3em; border-radius: 2px; vertical-align:middle;">
-                <label style="color: Blue;">Página</label>
+            <div style="background-color: #eee;height: 36px;line-height: 36px;text-align: center;font-size: 16px;padding:10px 0px">
+                <label style="color: black;">Página</label>
                 <asp:DataPager  ID="PaginasDatos"
                                 CssClass="Contador_Paginas"
                                 PageSize="5"
@@ -126,8 +131,8 @@
             <table>
                 <tr id="itemPlaceholder" runat="server"></tr>
             </table>
-            <div style="background:RGBA(223,223,223,.7); height:1.3em; border-radius: 2px; vertical-align:middle;">
-                <label style="color: Blue;">Página</label>
+             <div style="background-color: #eee;height: 36px;line-height: 36px;text-align: center;font-size: 16px;padding:10px 0px">
+                <label style="color: black;">Página</label>
                 <asp:DataPager  ID="DataPager1"
                                 CssClass="Contador_Paginas"
                                 PageSize="5"

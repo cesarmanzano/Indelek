@@ -19,13 +19,13 @@
 
 <style type="text/css">
 #forma{ max-width:900px; height:auto; margin:0px auto;}
-#formanombre, #formatelefono, #formaemail, #formamensaje{max-width:290px; text-align:center; margin:0px auto; font-size: 18px; display:inline-block;}
+#formanombre, #formatelefono, #formaemail, #formamensaje{max-width:140px; text-align:center; margin:0px auto; font-size: 18px; display:inline-block;vertical-align: top;}
 
 #formaenviar{max-width:350px; text-align:center; margin:0px auto; font-size:24px; display:inline-block;}
 /*#formamensaje, #formaenviar{ height:100px;}*/
 .g-recaptcha{  width: 310px; display: inline-block; margin:15px;}
 
-#formanombre, #formatelefono, #formaemail, #formamensaje, #formaenviar, input[type="password"], input[type="search"] , input[type="form"], input[type="email"], input[type="tel"], textarea{font-family: 'Hind', sans-serif; color:#ffffff; text-shadow: black 0.1em 0.1em 0.2em;}
+#formanombre, #formatelefono, #formaemail, #formamensaje, #formaenviar, input[type="password"], input[type="search"] , input[type="form"], input[type="email"], input[type="tel"], textarea{font-family: 'Hind', sans-serif; color:#ffffff; text-shadow: black 0.1em 0.1em 0.2em;height:100px}
 
 /*Redondear Campos de Texto*/	
 
@@ -94,7 +94,7 @@ background-color:#ffffff;
       </div>       
       
       <div id="formamensaje">
-      Mensaje <br /> <asp:TextBox ID="tbMensaje" runat="server" Height="82px" Width="290px" TextMode="MultiLine" ></asp:TextBox>
+      Mensaje <br /> <asp:TextBox ID="tbMensaje" runat="server" Width="90%" TextMode="MultiLine" ></asp:TextBox>
       </div>
       
       <div id="formaenviar">

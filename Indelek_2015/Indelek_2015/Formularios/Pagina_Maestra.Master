@@ -215,7 +215,7 @@ nav select {display: none;}
 
         <div id="submenu">
         <h1>Indelek</h1>
-        Pedidos<br>
+        <a style="color:white">Pedidos</a><br>
         <a style="color:white" href="Facturacion.aspx">Facturación</a><br>
         Lista de Precios<br>
         Términos y Condiciones<br>
@@ -225,21 +225,21 @@ nav select {display: none;}
 
         <div id="chihuahua">
         <h1>Chihuahua</h1>
-        <div class="overlay" onClick="style.pointerEvents='none'"></div>
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=z7Yxou-wYo_o.kJsPeq4RoPxc&z=17" width="300" height="480"></iframe>
+        <%--<div class="overlay" onClick="style.pointerEvents='none'"></div>--%>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=z7Yxou-wYo_o.kJsPeq4RoPxc&z=17" width="300" height="300"></iframe>
         </div>
 
         <div id="juarez">
         <h1>Juárez</h1>
-        <div class="overlay" onClick="style.pointerEvents='none'"></div>
-        <iframe src="https://www.google.es/maps/d/u/0/embed?mid=z7Yxou-wYo_o.k32Jp0sWedSQ&z=17" width="300" height="480"></iframe>
+        <%--<div class="overlay" onClick="style.pointerEvents='none'"></div>--%>
+        <iframe src="https://www.google.es/maps/d/u/0/embed?mid=z7Yxou-wYo_o.k32Jp0sWedSQ&z=17" width="300" height="300"></iframe>
         </div>
 
         <div id="contacto">
         <h1>Contacto</h1>
-        <div id="form"><iframe id="conte" name="conte" class="frame" src="../contacto/contacto.aspx" scrolling="auto" width="95%" height="100%"></iframe></div>
+        <div id="form"><iframe id="conte" name="conte" class="frame" src="../contacto/contacto.aspx" scrolling="no" width="95%" height="100%"></iframe></div>
         </div>
-
+        
     </footer>
 </form>
 

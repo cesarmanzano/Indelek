@@ -12,16 +12,7 @@ Option Explicit On
 
 
 Partial Public Class Datos_Articulo
-
-    '''<summary>
-    '''Control form2.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents form2 As Global.System.Web.UI.HtmlControls.HtmlForm
-
+    
     '''<summary>
     '''Control imgFoto.
     '''</summary>
@@ -30,7 +21,7 @@ Partial Public Class Datos_Articulo
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents imgFoto As Global.System.Web.UI.WebControls.Image
-
+    
     '''<summary>
     '''Control txtNombre.
     '''</summary>
@@ -39,7 +30,7 @@ Partial Public Class Datos_Articulo
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtNombre As Global.System.Web.UI.WebControls.Label
-
+    
     '''<summary>
     '''Control txtDescripcion.
     '''</summary>
@@ -48,7 +39,7 @@ Partial Public Class Datos_Articulo
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtDescripcion As Global.System.Web.UI.WebControls.Label
-
+    
     '''<summary>
     '''Control txtArticulo.
     '''</summary>
@@ -57,7 +48,7 @@ Partial Public Class Datos_Articulo
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtArticulo As Global.System.Web.UI.WebControls.Label
-
+    
     '''<summary>
     '''Control Label1.
     '''</summary>
@@ -66,7 +57,7 @@ Partial Public Class Datos_Articulo
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
-
+    
     '''<summary>
     '''Control txtClave.
     '''</summary>
@@ -75,43 +66,7 @@ Partial Public Class Datos_Articulo
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtClave As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Control txtPrecio.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txtPrecio As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Control txtEstado_Venta.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txtEstado_Venta As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Control Tabla_Articulos.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Tabla_Articulos As Global.System.Web.UI.WebControls.SqlDataSource
-
-    '''<summary>
-    '''Control ListView1.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents ListView1 As Global.System.Web.UI.WebControls.ListView
-
+    
     '''<summary>
     '''Control txtSucursal.
     '''</summary>
@@ -120,7 +75,7 @@ Partial Public Class Datos_Articulo
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtSucursal As Global.System.Web.UI.WebControls.Label
-
+    
     '''<summary>
     '''Control txtDisponible.
     '''</summary>
@@ -129,4 +84,31 @@ Partial Public Class Datos_Articulo
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtDisponible As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Control ListView1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ListView1 As Global.System.Web.UI.WebControls.ListView
+    
+    '''<summary>
+    '''Control txtPrecio.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtPrecio As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Control txtEstado_Venta.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtEstado_Venta As Global.System.Web.UI.WebControls.Label
 End Class

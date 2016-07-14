@@ -23,8 +23,8 @@ body {background:url(../imasmenu/fondo.png); margin:0px auto;}
 <div>
     <table id="Login">
         <tr>
-            <td></td>
-            <td class="espacio"><p class="loginn">Cliente&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <td class="espacio2">Cliente</td>
+            <td class="espacio">
                 <asp:TextBox                                
                     required="required"
                     ID="txtUsuario"
@@ -35,8 +35,8 @@ body {background:url(../imasmenu/fondo.png); margin:0px auto;}
             </td>
         </tr>
         <tr>
-            <td></td>
-            <td class="espacio"><p class="loginn">Contraseña</p>
+            <td class="espacio2">Contraseña</td>
+            <td class="espacio">
                 <asp:textbox                    
                     ID="txtContrasena" 
                     required="required"
@@ -52,14 +52,14 @@ body {background:url(../imasmenu/fondo.png); margin:0px auto;}
                     ID="cmdIniciar"                      
                     runat="server"
                     OnClientClick="Valida_Usuario"
-                    CssClass="agregar"
+                    CssClass="agregar2"
                     Text="Iniciar"/>
             </td>                
         </tr>            
         <tr>
             <td >
             </td>
-            <td>
+            <td class="espacio">
                 <br />
                 <a href="Recuperar_Contrasena.aspx">¿Olvido su Contraseña?</a><br />
                 <a href="Registro.aspx">Registrarse</a>
