@@ -106,10 +106,10 @@
     </asp:Menu>  --%>
             <div class="slider">
     <ul class="rslides" id="slider1">
-        <li><a id="hrefImagen32" href="javascript:void(0)"> <asp:Image ID="Image32" ImageUrl="../imasmenu/m1.jpg" runat="server" /></a></li>
-        <li><a id="hrefImagen33" href="javascript:void(0)"> <asp:Image ID="Image33" ImageUrl="../imasmenu/m2.jpg" runat="server" /></a></li>
-        <li><a id="hrefImagen34" href="javascript:void(0)"> <asp:Image ID="Image34" ImageUrl="../imasmenu/m3.jpg" runat="server" /></a></li>
-        <li><a id="hrefImagen35" href="javascript:void(0)"> <asp:Image ID="Image35" ImageUrl="../imasmenu/m3.jpg" runat="server" /></a></li>
+        <li><a id="hrefImagen28" href="javascript:void(0)"> <asp:Image ID="Image32" ImageUrl="../imasmenu/m1.jpg" runat="server" /></a></li>
+        <li><a id="hrefImagen29" href="javascript:void(0)"> <asp:Image ID="Image33" ImageUrl="../imasmenu/m2.jpg" runat="server" /></a></li>
+        <li><a id="hrefImagen30" href="javascript:void(0)"> <asp:Image ID="Image34" ImageUrl="../imasmenu/m3.jpg" runat="server" /></a></li>
+        <li><a id="hrefImagen31" href="javascript:void(0)"> <asp:Image ID="Image35" ImageUrl="../imasmenu/m3.jpg" runat="server" /></a></li>
     </ul>
                 </div>
             </div>
@@ -485,7 +485,6 @@
                                 ImageUrl="~/ImagenesRidgid/G2.jpg"
                                 ToolTip='~/ImagenesRidgid/G2.jpg'
                                 runat="server" />
-                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -498,7 +497,6 @@
                                 ImageUrl="~/ImagenesRidgid/G3.jpg"
                                 ToolTip='~/ImagenesRidgid/G3.jpg'
                                 runat="server" />
-                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -511,59 +509,6 @@
                                 ImageUrl="~/ImagenesRidgid/G4.jpg"
                                 ToolTip='~/ImagenesRidgid/G4jpg'
                                 runat="server" />
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a id="hrefImagen28" href="javascript:void(0)">
-                            <asp:Image
-                                ID="Image28"
-                                Height="80px"
-                                Width="70px"
-                                ImageUrl="~/ImagenesRidgid/G4.jpg"
-                                ToolTip='~/ImagenesRidgid/G4jpg'
-                                runat="server" />
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a id="hrefImagen29" href="javascript:void(0)">
-                            <asp:Image
-                                ID="Image29"
-                                Height="80px"
-                                Width="70px"
-                                ImageUrl="~/ImagenesRidgid/G4.jpg"
-                                ToolTip='~/ImagenesRidgid/G4jpg'
-                                runat="server" />
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a id="hrefImagen30" href="javascript:void(0)">
-                            <asp:Image
-                                ID="Image30"
-                                Height="80px"
-                                Width="70px"
-                                ImageUrl="~/ImagenesRidgid/G4.jpg"
-                                ToolTip='~/ImagenesRidgid/G4jpg'
-                                runat="server" />
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a id="hrefImagen31" href="javascript:void(0)">
-                            <asp:Image
-                                ID="Image31"
-                                Height="80px"
-                                Width="70px"
-                                ImageUrl="~/ImagenesRidgid/G4.jpg"
-                                ToolTip='~/ImagenesRidgid/G4jpg'
-                                runat="server" />
-                            </a>
                         </td>
                     </tr>
                 </table>
