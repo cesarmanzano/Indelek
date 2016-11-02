@@ -20,53 +20,56 @@ body {background:url(../imasmenu/fondo.png); margin:0px auto;}
 </div>
 <asp:ScriptManager ID="ScriptManager1" runat="server">
 </asp:ScriptManager>
-<div>
-    <table id="Login">
-        <tr>
-            <td class="espacio2">Cliente</td>
-            <td class="espacio">
-                <asp:TextBox                                
-                    required="required"
-                    ID="txtUsuario"
-                    placeholder="Número de Cliente"            
+<main>
+    <section class="area_inicio">
+        <h3>Inicio de Sesion</h3>
+        <table id="Login">
+            <tr>
+                <td class="espacio2">Cliente</td>
+                <td class="espacio">
+                    <asp:TextBox                                
+                        required="required"
+                        ID="txtUsuario"
+                        placeholder="Número de Cliente"            
                     
-                    autocomplete="on"
-                    runat="server"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="espacio2">Contraseña</td>
-            <td class="espacio">
-                <asp:textbox                    
-                    ID="txtContrasena" 
-                    required="required"
-                    type="Password"
-                    placeholder="Contraseña"
-                    runat="server"></asp:textbox>
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="espacio">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button 
-                    ID="cmdIniciar"                      
-                    runat="server"
-                    OnClientClick="Valida_Usuario"
-                    CssClass="agregar2"
-                    Text="Iniciar"/>
-            </td>                
-        </tr>            
-        <tr>
-            <td >
-            </td>
-            <td class="espacio">
-                <br />
-                <a href="Recuperar_Contrasena.aspx">¿Olvido su Contraseña?</a><br />
-                <a href="Registro.aspx">Registrarse</a>
-            </td>
-        </tr>            
-    </table>        
-</div>  
+                        autocomplete="on"
+                        runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="espacio2">Contraseña</td>
+                <td class="espacio">
+                    <asp:textbox                    
+                        ID="txtContrasena" 
+                        required="required"
+                        type="Password"
+                        placeholder="Contraseña"
+                        runat="server"></asp:textbox>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="espacio">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button 
+                        ID="cmdIniciar"                      
+                        runat="server"
+                        OnClientClick="Valida_Usuario"
+                        CssClass="agregar2"
+                        Text="Iniciar"/>
+                </td>                
+            </tr>            
+            <tr>
+                <td >
+                </td>
+                <td class="espacio">
+                    <br />
+                    <a href="Recuperar_Contrasena.aspx">¿Olvido su Contraseña?</a><br />
+                    <a href="Registro.aspx">Registrarse</a>
+                </td>
+            </tr>            
+        </table>
+    </section>
+</main>  
 <div class="Mensaje_Error" id="mensajeError">
     <asp:Label ID="lblError" runat="server" Visible="false"></asp:Label>
 </div>
