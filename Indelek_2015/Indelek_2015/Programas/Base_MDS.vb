@@ -247,7 +247,7 @@ Module Base_MDS
         '                    "Database=" + Valor(Datos, "base_datos").Trim + ";"
 
         Dim lcServidor As String = "97.105.4.107,49184"
-        '"INDELEK.ELECTROSYSTEMSNET.COM,49184"
+        lcServidor = "INDELEK.ELECTROSYSTEMSNET.COM,49184"
         '"MAYOREOCARSS.DDNS.NET,49184"
         'lcServidor = "97.105.4.107,49184"
 
