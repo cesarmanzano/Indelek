@@ -160,7 +160,11 @@
                         Height="100px"
                         Width="150px"   
                         ToolTip='<%#"~/fotos/" + DataBinder.Eval(Container.DataItem, "foto")%>'         
-                        ImageUrl='<%#"~/fotos/" + DataBinder.Eval(Container.DataItem, "foto").ToString.Trim%>'/></div>
+                        ImageUrl='<%#"~/fotos/" + DataBinder.Eval(Container.DataItem, "foto").ToString.Trim%>'
+                        
+                        />
+                        <%--OnClick="Datos_Articulo('<%# Eval("articulo")%>')"--%>
+                    </div>
                 
                    <div class="tyd">
                      <h5><a onclick="Datos_Articulo('<%# Eval("articulo")%>')" href="Datos_Articulo.aspx?lcArticulo=<%# Eval("articulo") %>"> <b class="Nombre_Articulo"><%#DataBinder.Eval(Container.DataItem, StrConv("nombre_articulo",vbProperCase))%></b><br /></a></h5>

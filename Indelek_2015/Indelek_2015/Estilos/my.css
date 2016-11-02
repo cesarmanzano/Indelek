@@ -3,6 +3,14 @@
 
 /* Estilos */
 
+/* Nuevas reglas*/
+
+main { width: 100%; min-height: 500px; margin: 0; padding: 0; }
+.area_inicio { width: 500px; height: auto; margin: 40px auto; padding: 0; }
+
+
+/*Fin nuevas reglas*/
+
 body, h1, h2, h3, h4, h5, h6, h7, p, a, b, footer, .letterpress, #inicio, footer, .icono, .readmore, textarea, input[type="text"], input[type="password"], input[type="tel"], input[type="email"], header, .iconos, #nosotros, .puertas, .texto, .codiprog, .codiprog3, nav select, .txtcuadro, .W1-h16 nav {font-family: 'Open Sans', sans-serif; color:#ffffff; text-align:center; font-style:normal; font-weight:400; font-size:18px;}
 b {color:black;
 }
@@ -145,19 +153,20 @@ box-shadow:         0px 7px 9px 0px rgba(0, 0, 0, 0.75); margin:10px;}
   background-image: -webkit-linear-gradient( 90deg, rgb(255,242,0) 0%, rgb(255,229,0) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(255,242,0) 0%, rgb(255,229,0) 100%);}
 
-  .agregar2{border-style: solid;
-  border-width: 1px;
-  border-color: rgb(242, 202, 0);
-  border-radius: 5px;
-  background-image: -moz-linear-gradient( 90deg, rgb(255,242,0) 0%, rgb(255,229,0) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(255,242,0) 0%, rgb(255,229,0) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(255,242,0) 0%, rgb(255,229,0) 100%);
-  width: 166px;
-  height: 37px;
-   color:#49494a;
-   font-weight:600;
-   padding:10px 0px 30px 0px;
-   font-size:18px;
+  .agregar2{
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgb(242, 202, 0);
+      border-radius: 5px;
+      background-image: -moz-linear-gradient( 90deg, rgb(255,242,0) 0%, rgb(255,229,0) 100%);
+      background-image: -webkit-linear-gradient( 90deg, rgb(255,242,0) 0%, rgb(255,229,0) 100%);
+      background-image: -ms-linear-gradient( 90deg, rgb(255,242,0) 0%, rgb(255,229,0) 100%);
+      width: 166px;
+      height: 37px;
+      color:#49494a;
+      font-weight:600;
+      /*padding:10px 0px 30px 0px;*/
+      font-size:18px;
   }
  
  .agregar2:hover{ background-image: -moz-linear-gradient( 90deg, rgb(255,229,0) 0%, rgb(255,242,0) 100%);
