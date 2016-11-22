@@ -41,6 +41,15 @@ Partial Public Class Prueba
     Protected WithEvents Filtros_Precios As Global.System.Web.UI.WebControls.ListView
     
     '''<summary>
+    '''total_art control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents total_art As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''Lista_Articulos control.
     '''</summary>
     '''<remarks>

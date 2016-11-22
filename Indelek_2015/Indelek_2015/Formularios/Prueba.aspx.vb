@@ -8,6 +8,7 @@ Public Class Prueba
         Me.Lista_Articulos.DataSource = DirectCast(Session("oLista_Articulos"), DataTable)
         Me.Filtros_Marca.DataSource = DirectCast(Session("oLista_Filtros_Marca"), DataTable)
         Me.Filtros_Precios.DataSource = DirectCast(Session("oLista_Filtros_Precio"), DataTable)
+        Me.total_art.Text = "Total artículos: " + DirectCast(Session("oTotal_Articulos"), Integer).ToString()
 
         Me.Lista_Articulos.DataBind()
         Me.Filtros_Marca.DataBind()
@@ -33,7 +34,7 @@ Public Class Prueba
 
         If Not String.IsNullOrEmpty(lcNombre) Or
             Not String.IsNullOrEmpty(lcLSF) Then
-
+            Dim lnTotal_art As Integer
             Dim loComando As SqlCommand
             Dim loLector As SqlDataReader
             Dim Articulos As New DataTable
@@ -67,12 +68,24 @@ Public Class Prueba
             loLector.Close()
             loConexion.Close()
 
+            lnTotal_art = Conteo_Articulos(Marcas)
+
             Session("oLista_Articulos") = Articulos
             Session("oLista_Filtros_Marca") = Marcas
             Session("oLista_Filtros_Precio") = Precios
+            Session("oTotal_Articulos") = lnTotal_art
         End If
 
     End Sub
+
+    Private Function Conteo_Articulos(marcas As DataTable) As Integer
+        Dim conteo As Integer = 0
+        For Each marca As DataRow In marcas.Rows
+            conteo = conteo + marca.Item(1)
+        Next
+
+        Return conteo
+    End Function
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Dim loTabla_Articulos As DataTable

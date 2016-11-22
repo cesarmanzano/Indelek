@@ -24,11 +24,11 @@
                     <tr>
                         <td>
                             <a class="filtro" 
-                                href="Prueba.aspx?cTexto=<%=
- Request.QueryString("cTexto")
-                                %>&cMarca=<%#DataBinder.Eval(Container.DataItem, StrConv("nombre_marca", vbProperCase).Trim)
-                                %>&lcFolio=<%=Request.QueryString("lcFolio")
-                                %>&lnCuantos=<%=Request.QueryString("lnCuantos")%>&llMarca=1">
+                                href="Prueba.aspx?cTexto=<%=Request.QueryString("cTexto")%>
+                                &cMarca=<%#DataBinder.Eval(Container.DataItem, StrConv("nombre_marca", vbProperCase).Trim)%>
+                                &lcFolio=<%=Request.QueryString("lcFolio")%>
+                                &lnCuantos=<%=Request.QueryString("lnCuantos")%>
+                                &llMarca=1">
                                 <%#DataBinder.Eval(Container.DataItem, StrConv("nombre_marca",vbProperCase))%>&nbsp
                                 (<%#DataBinder.Eval(Container.DataItem, "cuantos")%>)
                             </a>
@@ -93,6 +93,7 @@
      <section id="productos">
          
          <%--<div class="wrapperproductos">--%>
+         <asp:label runat="server" id="total_art" CssClass="articulos"/>
     <asp:ListView ID="Lista_Articulos" runat="server">
        <EmptyDataTemplate>
             <table id="Table1" runat="server">
@@ -113,7 +114,7 @@
             </table>
        </EmptyDataTemplate>
         <LayoutTemplate>
-            <div style="background-color: #eee;height: 36px;line-height: 36px;text-align: center;font-size: 16px;padding:10px 0px">
+            <div style="background-color: #eee;height: 36px;line-height: 36px;text-align: center;font-size: 16px;padding:10px 0px">             
                 <label style="color: black;">Página</label>
                 <asp:DataPager  ID="PaginasDatos"
                                 CssClass="Contador_Paginas"
@@ -132,14 +133,14 @@
                 <tr id="itemPlaceholder" runat="server"></tr>
             </table>
              <div style="background-color: #eee;height: 36px;line-height: 36px;text-align: center;font-size: 16px;padding:10px 0px">
-                <label style="color: black;">Página</label>
-                <asp:DataPager  ID="DataPager1"
+                 <label style="color: black;">Página</label>
+                 <asp:DataPager  ID="DataPager1"
                                 CssClass="Contador_Paginas"
                                 PageSize="5"
                                 QueryStringField="page"
                                 runat="server"
                                 PagedControlID="Lista_Articulos">
-                    <Fields>                                         
+                     <Fields>                                         
                         <asp:NumericPagerField
                             CurrentPageLabelCssClass="Pagina_Actual_DataPager"                              
                             ButtonCount="10"/>
