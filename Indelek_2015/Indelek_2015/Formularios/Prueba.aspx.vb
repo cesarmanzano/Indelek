@@ -5,14 +5,18 @@ Public Class Prueba
 
     Sub Bind_Datos()
 
-        Me.Lista_Articulos.DataSource = DirectCast(Session("oLista_Articulos"), DataTable)
-        Me.Filtros_Marca.DataSource = DirectCast(Session("oLista_Filtros_Marca"), DataTable)
-        Me.Filtros_Precios.DataSource = DirectCast(Session("oLista_Filtros_Precio"), DataTable)
-        Me.total_art.Text = "Total artículos: " + DirectCast(Session("oTotal_Articulos"), Integer).ToString()
 
-        Me.Lista_Articulos.DataBind()
-        Me.Filtros_Marca.DataBind()
-        Me.Filtros_Precios.DataBind()
+        If Not IsNothing(Session("oTotal_Articulos")) Then
+            Me.total_art.Text = "Total artículos: " + DirectCast(Session("oTotal_Articulos"), Integer).ToString()
+
+            Me.Lista_Articulos.DataSource = DirectCast(Session("oLista_Articulos"), DataTable)
+            Me.Filtros_Marca.DataSource = DirectCast(Session("oLista_Filtros_Marca"), DataTable)
+            Me.Filtros_Precios.DataSource = DirectCast(Session("oLista_Filtros_Precio"), DataTable)
+
+            Me.Lista_Articulos.DataBind()
+            Me.Filtros_Marca.DataBind()
+            Me.Filtros_Precios.DataBind()
+        End If
     End Sub
 
     Sub Consulta_SQL()
@@ -74,6 +78,10 @@ Public Class Prueba
             Session("oLista_Filtros_Marca") = Marcas
             Session("oLista_Filtros_Precio") = Precios
             Session("oTotal_Articulos") = lnTotal_art
+        Else
+            Me.Filtros_Marca.Visible = False
+            Me.Filtros_Precios.Visible = False
+            Me.Lista_Articulos.Visible = False
         End If
 
     End Sub
@@ -109,6 +117,7 @@ Public Class Prueba
                     End If
                 End If
             End If
+
             Me.Bind_Datos()
         End If
     End Sub

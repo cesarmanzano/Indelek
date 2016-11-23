@@ -39,6 +39,7 @@ Public Class Pagina_Maestra
 
         If Session("cNombre_Cliente") <> Nothing Then
             lcNombre = Session("cNombre_Cliente").ToString.Trim() + " Salir"
+            Me.link_Iniciar_Sesion.Visible = False
         Else
             lcNombre = ""
         End If
@@ -144,6 +145,9 @@ Public Class Pagina_Maestra
 
         If Not Me.IsPostBack Then
             Me.Carga_Carrito()
+            If Not IsNothing(Session("nCliente")) Then
+                Me.link_Cerrar_Sesion.Visible = True
+            End If
         End If
     End Sub
 

@@ -41,6 +41,33 @@ Partial Public Class Pagina_Maestra
     Protected WithEvents Logo As Global.System.Web.UI.WebControls.Image
     
     '''<summary>
+    '''nombre_cliente control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents nombre_cliente As Global.System.Web.UI.WebControls.HyperLink
+    
+    '''<summary>
+    '''link_Iniciar_Sesion control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents link_Iniciar_Sesion As Global.System.Web.UI.WebControls.HyperLink
+    
+    '''<summary>
+    '''link_Cerrar_Sesion control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents link_Cerrar_Sesion As Global.System.Web.UI.WebControls.HyperLink
+    
+    '''<summary>
     '''Imagen_Carrito control.
     '''</summary>
     '''<remarks>

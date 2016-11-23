@@ -1,4 +1,5 @@
-﻿///// <reference path="jquery-2.0.3.js" />
+﻿/// <reference path="C:\Proyectos_GitHub\Indelek\Indelek_2015\Indelek_2015\Formularios/Cerrar_Sesion.aspx" />
+///// <reference path="jquery-2.0.3.js" />
 
 $(document).ready(function () {
     //Cuando me Posiciono sobre el ID #Lista_Productos

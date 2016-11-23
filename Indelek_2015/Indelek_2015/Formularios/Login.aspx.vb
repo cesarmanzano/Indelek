@@ -19,30 +19,30 @@ Public Class Login1
         Dim loComando As SqlCommand
 
         If lnCliente <> 0 And Not String.IsNullOrEmpty(lcContrasena) Then
-            loComando = Crea_SP("Login_Web")
+            loComando = Crea_SP("Login_Clientes_Web")
             Agrega_Parametro(loComando, "nCliente", "I", lnCliente, 0)
             Agrega_Parametro(loComando, "cContrasena", "C", lcContrasena, 20)
-            Agrega_Parametro(loComando, "nPedido", "I", lnPedido, 0)
+            'Agrega_Parametro(loComando, "nPedido", "I", lnPedido, 0)
             Agrega_Parametro(loComando, "cNombre_Cliente", "C", lcNombre_Cliente, 50)
-            Agrega_Parametro(loComando, "lCliente_Web", "L", llCliente_Web, 0)
+            'Agrega_Parametro(loComando, "lCliente_Web", "L", llCliente_Web, 0)
 
-            loComando.Parameters("nCliente").Direction = ParameterDirection.InputOutput
-            loComando.Parameters("nPedido").Direction = ParameterDirection.InputOutput
+            'loComando.Parameters("nCliente").Direction = ParameterDirection.InputOutput
+            'loComando.Parameters("nPedido").Direction = ParameterDirection.InputOutput
             loComando.Parameters("cNombre_Cliente").Direction = ParameterDirection.InputOutput
-            loComando.Parameters("lCliente_Web").Direction = ParameterDirection.InputOutput
+            'loComando.Parameters("lCliente_Web").Direction = ParameterDirection.InputOutput
 
             loComando.ExecuteNonQuery()
 
-            If Not IsDBNull(loComando.Parameters("nPedido").Value) Then
+            If Not IsDBNull(loComando.Parameters("cNombre_Cliente").Value) Then
+                lcNombre_Cliente = loComando.Parameters("cNombre_Cliente").Value
+                'lnPedido = AInt(loComando.Parameters("nPedido").Value)
+                'lnCliente = AInt(loComando.Parameters("nCliente").Value)
+                'llCliente_Web = ABol(loComando.Parameters("lCliente_Web").Value)
 
-                lnPedido = AInt(loComando.Parameters("nPedido").Value)
-                lnCliente = AInt(loComando.Parameters("nCliente").Value)
-                llCliente_Web = ABol(loComando.Parameters("lCliente_Web").Value)
-
-                If Not String.IsNullOrEmpty(lnPedido) Then
+                If Not String.IsNullOrEmpty(lcNombre_Cliente) Then
                     Session("nCliente") = lnCliente
-                    Session("nPedido") = lnPedido
-                    Session("lCliente_Web") = llCliente_Web
+                    'Session("nPedido") = lnPedido
+                    'Session("lCliente_Web") = llCliente_Web
 
                     Dim lcOrigen As String = Session("lcRegresar").ToString.Trim
                     Dim lcArticulo,
@@ -51,12 +51,13 @@ Public Class Login1
                     lcArticulo = Request.QueryString("lcArticulo")
                     lnPrecio = Request.QueryString("lnPrecio")
 
-                    lcNombre_Cliente = loComando.Parameters("cNombre_Cliente").Value
+                    'lcNombre_Cliente = loComando.Parameters("cNombre_Cliente").Value
 
                     Session("cNombre_Cliente") = StrConv(lcNombre_Cliente, VbStrConv.ProperCase)
 
                     If String.IsNullOrEmpty(lcOrigen) Then
-                        lcOrigen = "Principal.aspx"
+                        'lcOrigen = "Principal.aspx"
+                        lcOrigen = "Prueba.aspx"
                     End If
 
                     If String.IsNullOrEmpty(lcArticulo) Then

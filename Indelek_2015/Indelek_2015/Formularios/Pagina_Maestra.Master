@@ -106,9 +106,25 @@ nav select {display: none;}
                         </div>            
                    
                     <div id="sesion">
-                     <a id="link_Iniciar_Sesion" href="Login.aspx">Iniciar Sesión</a> I <a id="link_Cerrar_Sesion" onclick="Activar_Sesion('DesActivar')">Cerrar Sesión</a>
-                      <%--<img src="imasmenu/carrito.png" alt=""/> --%>
-                        
+                        <%--<a id="link_Iniciar_Sesion" href="Login.aspx">Iniciar Sesión</a> I <a id="link_Cerrar_Sesion" onclick="Activar_Sesion('DesActivar')">Cerrar Sesión</a>--%>
+                        <%--<img src="imasmenu/carrito.png" alt=""/> --%>
+                        <asp:HyperLink runat="server"
+                            ID="nombre_cliente"
+                            CssClass="nombre_cliente">
+                            <%= Session("cNombre_Cliente") %>
+                        </asp:HyperLink>
+                        <asp:HyperLink runat="server"
+                            ID="link_Iniciar_Sesion"
+                            NavigateUrl="~/Formularios/Login.aspx">
+                            Iniciar Sesión
+                        </asp:HyperLink>
+                        <asp:HyperLink runat="server"
+                            ID="link_Cerrar_Sesion"
+                            NavigateUrl="~/Formularios/Cerrar_Sesion.aspx"
+                            Visible ="false">
+                            Cerrar Sesión
+                        </asp:HyperLink>
+                        <%--<asp:HyperLink runat="server" ID="link_Cerrar_Sesion" OnClick="Activar_Sesion('DesActivar')">Cerrar Sesión</asp:HyperLink>--%>
                         
                         <a href="Carrito_Compras.aspx">
                             <asp:Image ID="Imagen_Carrito" runat="server" ImageUrl="~/Imagenes/Carrito.png" Height="60px" Width="65px" />                          

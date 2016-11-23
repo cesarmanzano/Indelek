@@ -246,6 +246,7 @@ Module Base_MDS
         '                    "PWD=" + lcContrasena + ";" + _
         '                    "Database=" + Valor(Datos, "base_datos").Trim + ";"
 
+        'Dim lcServidor As String = "MDS4\DESARROLLO"
         'Dim lcServidor As String = "97.105.4.107,49184"
         Dim lcServidor As String = "INDELEK.ELECTROSYSTEMSNET.COM,49184"
         '"INDELEK.ELECTROSYSTEMSNET.COM,49184"

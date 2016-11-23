@@ -11,7 +11,7 @@
 <div id="Barra_Izquierda_Muestra">
     <article class="Informacion_Muestra">
         <div class="Filtros">
-            <div id="filtrostitulo">Marcas</div>
+            <div class="filtrostitulo">Marcas</div>
             <asp:ListView ID="Filtros_Marca" runat="server" style="text-align:left">
                 <LayoutTemplate>
                     <div style="border-radius: 2px; vertical-align:middle;">                                 
@@ -49,7 +49,7 @@
         </div>
         <br /><br />
         <div class="Filtros">
-           <div id="filtrostitulo">Precios</div>
+           <div class="filtrostitulo">Precios</div>
             <asp:ListView ID="Filtros_Precios" runat="server" style="text-align:left">
                 <LayoutTemplate>
                     <div style="border-radius: 2px; vertical-align:middle;">                                 
